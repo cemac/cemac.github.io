@@ -5,7 +5,8 @@ This repository is used to store various documentation, user guides and other mi
 ## Adding docs
 The documentation is contained in various subdirectories in `source/pages`. Please add your page to the most relevant folder, or create a new one.
 
-The repository is set up to automatically parse Markdown and reStructured Text files, so please use one of these formats. Any such files placed in these sub-directories will automatically be added to the table of contents.
+The repository is set up to automatically parse Markdown and reStructured Text files, so please use one of these formats. Any such files placed in these sub-directories will automatically be added to the table of contents. 
+This means that you should be able to upload files directly via the GitHub website rather than needing to clone and push the repository.
 
 Please ensure that you use consistent headings, and that the top-level heading (i.e. a single '`#`' in Markdown) is only used for the overall document title. 
 
