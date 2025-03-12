@@ -36,8 +36,7 @@ The Miniconda installer can be downloaded and made executable with the
 following commands:
 
 ```
-$ wget \
-  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$ wget 'https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh'
 $ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ```
 
@@ -76,7 +75,7 @@ prompt is now prefixed with `(base)`, to indicate that the base
 environment in the Miniconda installation is active:
 
 ```
-(base) [see1-234:earabc:1]$
+(base) [see1-234:earxyz:1]$
 ```
 
 At this point the `python` command will now default the version of
@@ -84,11 +83,11 @@ Python installed with Miniconda, and the `conda` command can be used to
 install packages in the `base` environment:
 
 ```
-(base) [see1-234:earabc:3]$ which python
-/home/earabc/conda/bin/python
-(base) [see1-234:earabc:3]$ python -V
+(base) [see1-234:earxyz:3]$ which python
+/home/earxyz/conda/bin/python
+(base) [see1-234:earxyz:3]$ python -V
 Python 3.7.4
-(base) [see1-234:earabc:4]$ conda install numpy
+(base) [see1-234:earxyz:4]$ conda install numpy
 ```
 
 However, an alternative method may be more advisable. Anaconda
@@ -123,7 +122,7 @@ creating new environments:
 $ which python
 /usr/bin/python
 $ which conda
-/home/earabc/conda/condabin/conda
+/home/earxyz/conda/condabin/conda
 $ cat ~/.condarc
 auto_activate_base: false
 channels:
@@ -146,17 +145,17 @@ folder, and the environments can be activated and deactivated with the
 `conda activate` and `conda deactivate` commands:
 
 ```
-[see1-234:earabc:12]$ ls conda/envs/
+[see1-234:earxyz:12]$ ls conda/envs/
 py3_spyder
-[see1-234:earabc:12]$ conda activate py3_spyder
-(py3_spyder) [see1-234:earabc:13]$ which python
-/home/earabc/conda/envs/py3_spyder/bin/python
-(py3_spyder) [see1-234:earabc:14]$ python -V
+[see1-234:earxyz:12]$ conda activate py3_spyder
+(py3_spyder) [see1-234:earxyz:13]$ which python
+/home/earxyz/conda/envs/py3_spyder/bin/python
+(py3_spyder) [see1-234:earxyz:14]$ python -V
 Python 3.7.3
-(py3_spyder) [see1-234:earabc:15]$ which spyder
-/home/earabc/conda/envs/py3_spyder/bin/spyder
-(py3_spyder) [see1-234:earabc:16]$ conda deactivate
-[see1-234:earabc:18]$
+(py3_spyder) [see1-234:earxyz:15]$ which spyder
+/home/earxyz/conda/envs/py3_spyder/bin/spyder
+(py3_spyder) [see1-234:earxyz:16]$ conda deactivate
+[see1-234:earxyz:18]$
 ```
 
 To create a Python version 2 environment containing the `numpy` and
@@ -172,9 +171,9 @@ The available environments can be listed with `conda env list`:
 $ conda env list
 # conda environments:
 #
-base                  *  /home/earabc/conda
-py2_scipy                /home/earabc/conda/envs/py2_spyder
-py3_spyder               /home/earabc/conda/envs/py3_spyder
+base                  *  /home/earxyz/conda
+py2_scipy                /home/earxyz/conda/envs/py2_spyder
+py3_spyder               /home/earxyz/conda/envs/py3_spyder
 ```
 
 ## Installing Packages
@@ -183,13 +182,13 @@ Once an environment has been activated, additional packages can be
 installed within that environment with the `conda install` command:
 
 ```
-(py3_spyder) [see1-234:earabc:24]$ conda install iris
+(py3_spyder) [see1-234:earxyz:24]$ conda install iris
 ```
 
 The `conda search` command can be used to search for available packages:
 
 ```
-(py3_spyder) [see1-234:earabc:25]$ conda search 'obsp*'
+(py3_spyder) [see1-234:earxyz:25]$ conda search 'obsp*'
 Loading channels: done
 # Name                       Version           Build  Channel             
 obspy                          1.0.2          py27_0  conda-forge         
@@ -201,7 +200,7 @@ To install a specific version of a package, the version can be specified
 with `==`:
 
 ```
-(py3_spyder) [see1-234:earabc:26]$ conda install obspy==1.0.3
+(py3_spyder) [see1-234:earxyz:26]$ conda install obspy==1.0.3
 ```
 
 It is also possible to install packages using the `pip` command, if a
@@ -212,7 +211,7 @@ The packages which are currently installed in an environment, their
 version information and installation source can be viewed by running:
 
 ```
-(py3_spyder) [see1-234:earabc:27]$ conda list
+(py3_spyder) [see1-234:earxyz:27]$ conda list
 ```
 
 ## Updating Packages
@@ -221,13 +220,13 @@ The `conda update` command can be used to update packages. For example,
 to update `spyder`:
 
 ```
-(py3_spyder) [see1-234:earabc:28]$ conda update spyder
+(py3_spyder) [see1-234:earxyz:28]$ conda update spyder
 ```
 
 To update all packages in an environment:
 
 ```
-(py3_spyder) [see1-234:earabc:29]$ conda update --all
+(py3_spyder) [see1-234:earxyz:29]$ conda update --all
 ```
 
 If an environment is not updated for some time, changes to the
