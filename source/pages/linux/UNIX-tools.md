@@ -1,19 +1,5 @@
 # Useful UNIX tools
 
-## Permissions related ##
-
-1. To enable readability of files for all
-```bash
-setfacl -m other:r-x */*
-chmod og+rx */*
-```
-
-make your home directory readable
-
-```bash
-nfs4_setfacl -a A::<USER>@ds.leeds.ac.uk:RX $HOME
-```
-
 ## Background tasks after log out ##
 
 1. Screen
