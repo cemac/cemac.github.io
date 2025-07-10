@@ -7,7 +7,7 @@
 # Using Bede
 ## What is Bede?
 
-Bede is the N8’s Tier 2 Power and GPU-based high-performance computing (HPC) platform.
+Bede is the N8’s Tier 2 Power and GPU-based high-performance computing (HPC) platform. the main nodes are IBM P9 and each one has 4 GPU cards. there is also a GH200 node.
 
 ## Resources available
 
