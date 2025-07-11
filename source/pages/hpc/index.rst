@@ -12,7 +12,8 @@ This page contains documentation and resources for internal and external High Pe
    :maxdepth: 3
    :glob:
    :caption: Contents:
-   
+
+   index.rst
    bede/index.rst
    
 
