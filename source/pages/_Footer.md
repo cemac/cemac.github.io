@@ -1,3 +1,0 @@
-- [CEMAC official page](https://www.cemac.leeds.ac.uk/)
-- [CEMAC github page](https://github.com/cemac)
-- [CEMAC twitter - @CEMAC_Leeds](https://twitter.com/CEMAC_Leeds)
