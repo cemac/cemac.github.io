@@ -18,7 +18,7 @@ Suite `u-` should run on archer 2 with a swap of the charging code and user name
 
 make required edits user name and charging code and run  
 
-# Running a Suite
+## Running a Suite
 
 in a suite dir run:
 
@@ -29,15 +29,15 @@ in a suite dir run:
 
 `rose sgc`
 
-# Making ancils
+## Making ancils
 
-# Xancil
+### Xancil
 
 seg faults:
 `ulimit -Ss 40000`
 
-# ncview
-Cannot read xonv converted ancils. e.g. qrparam.orog.nc will only  be readable via xconv
+## ncview
+Cannot read xconv converted ancils. e.g. qrparam.orog.nc will only  be readable via xconv
 
 
 
@@ -82,8 +82,9 @@ cd app/um
 rose app-upgrade vn12.0 (or whatever)
 cd …/fcm_make
 ```
+<hr> 
 
-# High Resolution Specific Notes
+## High Resolution Specific Notes
 
 The Regional Area Science settings e.g. [RA2](https://code.metoffice.gov.uk/trac/rmed/wiki/ra2) are scale aware.
 

@@ -24,7 +24,7 @@ ssh-add ~/.ssh/id_rsa_archerum
 weird FCM make permission error... not always ? Sometimes runs fine ?
 
 
-# ARCHER 2
+## ARCHER 2
 
 [CMS UM on archer 2 pages](https://cms.ncas.ac.uk/archer2/unified-model/)
 
@@ -34,14 +34,14 @@ weird FCM make permission error... not always ? Sometimes runs fine ?
   2. edit or add `site/archer2.rc` type file or `site/ncas_cray_ex/suite-adds.rc`
       * `--chdir=/work/n02/n02/<your ARCHER2 user name>`  line must be edited
 
-# SLURM COMMANDS
+## SLURM COMMANDS
 
 * `sinfo`  information on nodes available
 * `squeue -l | grep $USER` check if your jobs are running
 * `squeue -l | grep PENDING | wc -l` how long is the queue
 * `squeue -R shortqos` check the short queue
 
-# Gotchas
+## Gotchas
 
 
 * WALLCLOCK LIMIT in some suites is in minutes not seconds there 60 is 1 hour not 1 min
@@ -67,7 +67,7 @@ Here an extra rose task has been added to run at the end of each cycle to archiv
 
 *coming soon UM13 RA3 nested suite barebones with archer2 era5 fixes, ants and archiving enabled*
 
-# I/O issues 
+## I/O issues 
 
 If having I/O issues consider using the high performance scratch space, this deletes data automatically so not for any lasting storage.
 
@@ -120,7 +120,7 @@ CAP9 path must also be altered in:
 source=/work/y07/shared/umshared/CAP9.1/build/bin
 ```
 
-# UM source code mods #
+## UM source code mods #
 
 Depending on which version of the UM more or less modifications will be required:
 

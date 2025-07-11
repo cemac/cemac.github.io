@@ -1,6 +1,6 @@
 # USING ECMWF DATA
 
-# Obtaining ECMWF data
+## Obtaining ECMWF data
 
 ### via cdsapi on ARCHER
 
