@@ -26,7 +26,5 @@ Welcome to the Centre for Environmental Modelling and Computation (CEMAC) docume
    pages/linux/index.rst
    pages/profiling/index.rst
    pages/jasmin/index.rst
-   pages/for_cemac/index.rst     
-   pages/conference_notes/index.rst
 
 
