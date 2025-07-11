@@ -12,20 +12,16 @@ Welcome to the Centre for Environmental Modelling and Computation (CEMAC) docume
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :titlesonly: 
    :glob:
    :caption: Categories:
 
-   pages/general_computing/index.rst 
+   ppages/linux/index.rst
    pages/python/index.rst
    pages/git_and_github/index.rst
    pages/hpc/index.rst
    pages/ai_ml/index.rst
    pages/modelling/index.rst
    pages/data_vis/index.rst
-   pages/cloud/index.rst   
-   pages/containers/index.rst
-   pages/linux/index.rst
-   pages/profiling/index.rst
 
