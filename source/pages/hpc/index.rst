@@ -13,8 +13,6 @@ This page contains documentation and resources for internal and external High Pe
    :glob:
    :caption: Contents:
    
-   general/index.rst
-   jasmin/index.rst
    bede/index.rst
    
 
