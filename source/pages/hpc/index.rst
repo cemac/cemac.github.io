@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-High Performance Computing (HPC)
+HPC Systems
 ================================
-
+This page contains documentation and resources for internal and external High Performance Computing (HPC) systems.
 
 
 .. toctree::
