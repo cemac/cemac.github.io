@@ -14,7 +14,7 @@ This page contains documentation and resources for internal and external High Pe
    :caption: Contents:
 
    index.rst
-   bede/index.rst
+   bede/Using-Bede.md
    
 
 
