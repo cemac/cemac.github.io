@@ -9,7 +9,7 @@ This page contains documentation and resources for internal and external High Pe
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
    :caption: Contents:
 
