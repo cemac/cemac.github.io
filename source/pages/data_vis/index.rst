@@ -5,7 +5,6 @@
 
 Data Visualisation
 ================================
-Coming soon.
 
 
 .. toctree::
