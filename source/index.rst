@@ -8,7 +8,7 @@ Welcome to CEMAC's github.io page!
 
 
 
-Welcome to the Centre for Environmental Modelling and Computation (CEMAC) documentation page. Below you will find links to pages containing various tips, tricks and guides that members of the Centre have gathered over the years. 
+Welcome to the Centre for Environmental Modelling and Computation (CEMAC) documentation page. Below you will find links to pages containing various tips, tricks and guides that CEMAC members have gathered over the years. 
 
 
 .. toctree::
