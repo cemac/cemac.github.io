@@ -17,7 +17,7 @@ Welcome to the Centre for Environmental Modelling and Computation (CEMAC) docume
    :glob:
    :caption: Categories:
 
-   ppages/linux/index.rst
+   pages/linux/index.rst
    pages/python/index.rst
    pages/git_and_github/index.rst
    pages/hpc/index.rst
