@@ -12,7 +12,7 @@ Welcome to the Centre for Environmental Modelling and Computation (CEMAC) docume
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :titlesonly: 
    :glob:
    :caption: Categories:
