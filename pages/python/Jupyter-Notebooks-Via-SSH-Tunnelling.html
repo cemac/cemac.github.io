@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jupyter Notebooks via tunnelling &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Managing different python environments" href="Python-Environments.html" />
+    <link rel="prev" title="Anaconda" href="Anaconda.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Anaconda.html">Anaconda</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Jupyter Notebooks via tunnelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Python-Environments.html">Managing different python environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Python-Packages.html">Information on Packaging up Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Python-Packages.html#docstring-example">Docstring example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../version_control/index.html">Version Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Python</a></li>
+      <li class="breadcrumb-item active">Jupyter Notebooks via tunnelling</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/python/Jupyter-Notebooks-Via-SSH-Tunnelling.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="jupyter-notebooks-via-tunnelling">
+<h1>Jupyter Notebooks via tunnelling<a class="headerlink" href="#jupyter-notebooks-via-tunnelling" title="Link to this heading"></a></h1>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> or all relevant packages installed</p></li>
+<li><p>SSH connection</p></li>
+<li><p><a class="reference external" href="https://linuxize.com/post/how-to-use-linux-screen/">Screen</a> <em>installed by default on university systems</em></p></li>
+</ul>
+</section>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Link to this heading"></a></h2>
+<p><em>if anaconda not set up on remote machine see information at the bottom of this page</em></p>
+<ol class="arabic">
+<li><p>ssh to machine you want to run notebooks on (needs to have access to data etc) e.g. <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">foe-linux.leeds.ac.uk</span></code></p></li>
+<li><p>Once Jupyter is installed via anaconda or other choice generate password</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">notebook</span> <span class="o">--</span><span class="n">generate</span><span class="o">-</span><span class="n">config</span>
+<span class="n">jupyter</span> <span class="n">notebook</span> <span class="n">password</span>   
+</pre></div>
+</div>
+</li>
+<li><p>Edit the following lines in the config file like this exampele (may require different port number)</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">allow_origin</span> <span class="o">=</span> <span class="s1">&#39;*&#39;</span>
+<span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">allow_password_change</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">allow_remote_access</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">open_browser</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">ip</span> <span class="o">=</span> <span class="s1">&#39;0.0.0.0&#39;</span>
+<span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="mi">5566</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>start a screen session ideally naming the session something sensible
+<code class="docutils literal notranslate"><span class="pre">screen</span> <span class="pre">-S</span> <span class="pre">JupyterScreen</span></code></p></li>
+<li><p>go to desired directory and run <code class="docutils literal notranslate"><span class="pre">jupyter-notebook</span></code></p></li>
+<li><p>Take Note of port number e.g. 5566</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">I</span> <span class="mi">11</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mf">41.622</span> <span class="n">NotebookApp</span><span class="p">]</span> <span class="n">The</span> <span class="n">Jupyter</span> <span class="n">Notebook</span> <span class="ow">is</span> <span class="n">running</span> <span class="n">at</span><span class="p">:</span>
+<span class="p">[</span><span class="n">I</span> <span class="mi">11</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mf">41.622</span> <span class="n">NotebookApp</span><span class="p">]</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">foe</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="mf">03.</span><span class="n">leeds</span><span class="o">.</span><span class="n">ac</span><span class="o">.</span><span class="n">uk</span><span class="p">:</span><span class="mi">5566</span><span class="o">/</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p><a class="reference external" href="https://linuxize.com/post/how-to-use-linux-screen/">detach screen</a>: <code class="docutils literal notranslate"><span class="pre">ctr+</span> <span class="pre">a</span></code>+<code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+d</span></code></p></li>
+<li><p>On your home computer (linux or mac) edit or create file <code class="docutils literal notranslate"><span class="pre">~/.shh/config</span></code> to contain the lines (as referenced in our <a class="reference internal" href="#Remote-Access"><span class="xref myst">remote access page</span></a>)</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="n">remote</span><span class="o">-</span><span class="n">access</span>
+     <span class="n">User</span> <span class="o">&lt;</span><span class="n">leeds</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+     <span class="n">ForwardAgent</span> <span class="n">yes</span>
+     <span class="n">ForwardX11</span> <span class="n">yes</span>
+     <span class="n">Hostname</span> <span class="n">remote</span><span class="o">-</span><span class="n">access</span><span class="o">.</span><span class="n">leeds</span><span class="o">.</span><span class="n">ac</span><span class="o">.</span><span class="n">uk</span>
+     <span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa_work</span>
+     <span class="n">ServerAliveInterval</span> <span class="mi">240</span>
+
+<span class="n">Host</span> <span class="n">foe</span><span class="o">-</span><span class="mi">03</span>
+     <span class="n">User</span> <span class="o">&lt;</span><span class="n">leeds</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+     <span class="n">ForwardAgent</span> <span class="n">yes</span>
+     <span class="n">ForwardX11</span> <span class="n">yes</span>
+     <span class="n">Hostname</span> <span class="n">foe</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="mi">03</span>
+     <span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa_work</span>
+     <span class="n">ServerAliveInterval</span> <span class="mi">240</span>
+     <span class="n">Proxycommand</span> <span class="n">ssh</span> <span class="o">-</span><span class="n">qremote</span><span class="o">-</span><span class="n">access</span> <span class="o">-</span><span class="n">W</span> <span class="o">%</span><span class="n">h</span><span class="p">:</span><span class="o">%</span><span class="n">p</span>
+</pre></div>
+</div>
+<p><em>You need config for a gateway machine: e.g. remote access or see-gw-01 and the machine you are running the notebook on</em>
+9. generate key and copy keys to access to leeds systems as outlined in our <a class="reference internal" href="#Remote-Access"><span class="xref myst">remote access</span></a> page</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ssh-keygen</span> <span class="pre">-t</span> <span class="pre">rsa</span></code> <em>name something like <code class="docutils literal notranslate"><span class="pre">id_rsa_work</span></code> to match identity file in the config file you just created</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ssh-copy-id</span> <span class="pre">earhbu&#64;see-gw-01</span></code></p></li>
+</ul>
+<ol class="arabic simple" start="10">
+<li><p>Now tunnel in</p></li>
+</ol>
+<ul class="simple">
+<li><p>generic    <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-N</span> <span class="pre">-f</span> <span class="pre">-L</span> <span class="pre">localhost:&lt;localportno&gt;:localhost:&lt;remoteportno&gt;</span> <span class="pre">user&#64;host</span></code></p></li>
+<li><p>following this example:
+<code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-N</span> <span class="pre">-f</span> <span class="pre">-L</span> <span class="pre">localhost:5000:localhost:5566</span> <span class="pre">user&#64;foe-03</span></code></p></li>
+</ul>
+<ol class="arabic simple" start="11">
+<li><p>Access from your local browser <code class="docutils literal notranslate"><span class="pre">http://localhost:5000/</span></code> enter your password</p></li>
+</ol>
+<hr>
+</section>
+<section id="installing-anaconda">
+<h2>Installing anaconda<a class="headerlink" href="#installing-anaconda" title="Link to this heading"></a></h2>
+<p>The following commands will install on a Linux machine via the terminal. After this you can <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">notebook</span></code> and</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh
+chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>Miniconda3-py39_4.9.2-Linux-x86_64.sh
+bash<span class="w"> </span>Miniconda3-py39_4.9.2-Linux-x86_64.sh
+</pre></div>
+</div>
+</section>
+<section id="saving-notebooks-for-sharing">
+<h2>Saving notebooks for sharing<a class="headerlink" href="#saving-notebooks-for-sharing" title="Link to this heading"></a></h2>
+<p>Some tips for large notebooks</p>
+<ol class="arabic simple">
+<li><p>Clear output before pushing to git.</p></li>
+<li><p>save as markdown <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">nbconvert</span> <span class="pre">--to</span> <span class="pre">markdown</span> <span class="pre">&lt;file&gt;.ipynb</span></code></p></li>
+<li><p>save as pdf <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">nbconvert</span> <span class="pre">--to</span> <span class="pre">pdf</span> <span class="pre">&lt;file&gt;.ipynb</span></code></p>
+<ul class="simple">
+<li><p><strong>NB</strong> notebooks containing large amounts of markdown  mayrequire debugging to convert to pdf via converting latex first and running through an application that gives detailed logs like texmaker</p></li>
+</ul>
+</li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Anaconda.html" class="btn btn-neutral float-left" title="Anaconda" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Python-Environments.html" class="btn btn-neutral float-right" title="Managing different python environments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

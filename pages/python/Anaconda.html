@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anaconda &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Jupyter Notebooks via tunnelling" href="Jupyter-Notebooks-Via-SSH-Tunnelling.html" />
+    <link rel="prev" title="Python" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Python</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Anaconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Jupyter-Notebooks-Via-SSH-Tunnelling.html">Jupyter Notebooks via tunnelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Python-Environments.html">Managing different python environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Python-Packages.html">Information on Packaging up Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Python-Packages.html#docstring-example">Docstring example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../version_control/index.html">Version Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Python</a></li>
+      <li class="breadcrumb-item active">Anaconda</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/python/Anaconda.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="anaconda">
+<h1>Anaconda<a class="headerlink" href="#anaconda" title="Link to this heading"></a></h1>
+<p>The Anaconda Distribution provides a popular method of installing
+Python, R and associated libraries and packages.</p>
+<p>The Anaconda Distribution (<a class="reference external" href="https://www.anaconda.com/">https://www.anaconda.com/</a>) is available for
+Linux, Windows and Apple systems, and will install all files within your
+home directory by default, and as such, installation does not require
+any elevated / administrative permissions.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p>There are various different Anaconda installers available, with the
+default installation containing Python version 2 or version 3 and many
+useful packages (<a class="reference external" href="https://www.anaconda.com/distribution/">https://www.anaconda.com/distribution/</a>). However, it
+is worth noting that the installation can require several Gigabytes of
+disk space.</p>
+<p>As an alternative the Miniconda installer
+(<a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a>) provides a minimal
+base installation which can be used to create environments and install
+required packages.</p>
+<p>For Linux systems, the Miniconda 64 bit version 3 installer is
+recommended, which can be used to create Python version 2 and version 3
+as well as R environments:</p>
+<p><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh</a></p>
+<p>As mentioned, Anaconda installations can get quite large, and will
+install in the home directory by default, so it is worth checking your
+quota (<code class="docutils literal notranslate"><span class="pre">quota</span> <span class="pre">-s</span></code>) or selecting a suitable location (for example, if you
+have access to some large volume disk space) before installation.</p>
+<p>The Miniconda installer can be downloaded and made executable with the
+following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ wget &#39;https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&#39;
+$ chmod +x Miniconda3-latest-Linux-x86_64.sh
+</pre></div>
+</div>
+<p>The installer can then be run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./Miniconda3-latest-Linux-x86_64.sh
+</pre></div>
+</div>
+<p>The installation process will ask for the terms of the license to be
+accepted, and then ask for an installation directory, defaulting to a
+directory named <code class="docutils literal notranslate"><span class="pre">miniconda3</span></code> in the home directory. If you wish to
+select an alternative location, enter the full path to the required
+location. If installing in your home directory, a sensible path to
+choose might be <code class="docutils literal notranslate"><span class="pre">/home/username/conda</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">username</span></code> with your
+own username.</p>
+<p>After the installer has finished extracting the files in to the selected
+location, it will ask whether you wish to run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code> to initialise
+the installation. Selecting yes will update the <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> so that the
+Anaconda programs will be available in future sessions.</p>
+<p>Once the installation process has been completed, the installer is no
+longer required, and can be removed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ rm Miniconda3-latest-Linux-x86_64.sh
+</pre></div>
+</div>
+</section>
+<section id="initial-configuration">
+<h2>Initial Configuration<a class="headerlink" href="#initial-configuration" title="Link to this heading"></a></h2>
+<p>Once the installation is complete, if the <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> file was updated
+successfully, the Miniconda installation will be active when you either
+run <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/.bashrc</span></code>, or open a new shell. You should see that the
+prompt is now prefixed with <code class="docutils literal notranslate"><span class="pre">(base)</span></code>, to indicate that the base
+environment in the Miniconda installation is active:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(base) [see1-234:earxyz:1]$
+</pre></div>
+</div>
+<p>At this point the <code class="docutils literal notranslate"><span class="pre">python</span></code> command will now default the version of
+Python installed with Miniconda, and the <code class="docutils literal notranslate"><span class="pre">conda</span></code> command can be used to
+install packages in the <code class="docutils literal notranslate"><span class="pre">base</span></code> environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(base) [see1-234:earxyz:3]$ which python
+/home/earxyz/conda/bin/python
+(base) [see1-234:earxyz:3]$ python -V
+Python 3.7.4
+(base) [see1-234:earxyz:4]$ conda install numpy
+</pre></div>
+</div>
+<p>However, an alternative method may be more advisable. Anaconda
+environments can include a large number of different programs and
+libraries which can cause conflicts with system versions of the same
+files, so it can be better to create environments for specific purposes,
+activating and deactivating the environments as required.</p>
+<p>To stop the <code class="docutils literal notranslate"><span class="pre">base</span></code> environment being automatically activated when a
+shell is opened, the following command can be run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda config --set auto_activate_base false
+</pre></div>
+</div>
+<p>It may also be worth adding the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel to configuration.
+The <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel is an additional repository from which
+packages can be installed, and includes many popular scientific
+packages, such as iris. The following commands will add the
+<code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda config --add channels conda-forge
+</pre></div>
+</div>
+<p>These changes update the file <code class="docutils literal notranslate"><span class="pre">~/.condarc</span></code>, and after they have been run,
+and a new shell is opened, the <code class="docutils literal notranslate"><span class="pre">base</span></code> channel will no longer be
+activated by default, but the <code class="docutils literal notranslate"><span class="pre">conda</span></code> command will be available to allow
+creating new environments:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ which python
+/usr/bin/python
+$ which conda
+/home/earxyz/conda/condabin/conda
+$ cat ~/.condarc
+auto_activate_base: false
+channels:
+  - conda-forge
+  - defaults
+</pre></div>
+</div>
+</section>
+<section id="creating-environments">
+<h2>Creating Environments<a class="headerlink" href="#creating-environments" title="Link to this heading"></a></h2>
+<p>The command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> can be used to create environments containing
+the required packages. For example, to create an environment containing
+Python version 3 and the Spyder graphical development environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda create -n py3_spyder python=3 spyder
+</pre></div>
+</div>
+<p>Environments are created within the <code class="docutils literal notranslate"><span class="pre">envs</span></code> directory of the installation
+folder, and the environments can be activated and deactivated with the
+<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> and <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code> commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[see1-234:earxyz:12]$ ls conda/envs/
+py3_spyder
+[see1-234:earxyz:12]$ conda activate py3_spyder
+(py3_spyder) [see1-234:earxyz:13]$ which python
+/home/earxyz/conda/envs/py3_spyder/bin/python
+(py3_spyder) [see1-234:earxyz:14]$ python -V
+Python 3.7.3
+(py3_spyder) [see1-234:earxyz:15]$ which spyder
+/home/earxyz/conda/envs/py3_spyder/bin/spyder
+(py3_spyder) [see1-234:earxyz:16]$ conda deactivate
+[see1-234:earxyz:18]$
+</pre></div>
+</div>
+<p>To create a Python version 2 environment containing the <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and
+<code class="docutils literal notranslate"><span class="pre">scipy</span></code> packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda create -n py2_scipy python=2 numpy scipy
+</pre></div>
+</div>
+<p>The available environments can be listed with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">list</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env list
+# conda environments:
+#
+base                  *  /home/earxyz/conda
+py2_scipy                /home/earxyz/conda/envs/py2_spyder
+py3_spyder               /home/earxyz/conda/envs/py3_spyder
+</pre></div>
+</div>
+</section>
+<section id="installing-packages">
+<h2>Installing Packages<a class="headerlink" href="#installing-packages" title="Link to this heading"></a></h2>
+<p>Once an environment has been activated, additional packages can be
+installed within that environment with the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span></code> command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(py3_spyder) [see1-234:earxyz:24]$ conda install iris
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">search</span></code> command can be used to search for available packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(py3_spyder) [see1-234:earxyz:25]$ conda search &#39;obsp*&#39;
+Loading channels: done
+# Name                       Version           Build  Channel             
+obspy                          1.0.2          py27_0  conda-forge         
+obspy                          1.0.2          py27_1  conda-forge
+...
+</pre></div>
+</div>
+<p>To install a specific version of a package, the version can be specified
+with <code class="docutils literal notranslate"><span class="pre">==</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(py3_spyder) [see1-234:earxyz:26]$ conda install obspy==1.0.3
+</pre></div>
+</div>
+<p>It is also possible to install packages using the <code class="docutils literal notranslate"><span class="pre">pip</span></code> command, if a
+package is available in the PyPi repositories, but not available in the
+Anaconda channels (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">packagename</span></code>).</p>
+<p>The packages which are currently installed in an environment, their
+version information and installation source can be viewed by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(py3_spyder) [see1-234:earxyz:27]$ conda list
+</pre></div>
+</div>
+</section>
+<section id="updating-packages">
+<h2>Updating Packages<a class="headerlink" href="#updating-packages" title="Link to this heading"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span></code> command can be used to update packages. For example,
+to update <code class="docutils literal notranslate"><span class="pre">spyder</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(py3_spyder) [see1-234:earxyz:28]$ conda update spyder
+</pre></div>
+</div>
+<p>To update all packages in an environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(py3_spyder) [see1-234:earxyz:29]$ conda update --all
+</pre></div>
+</div>
+<p>If an environment is not updated for some time, changes to the
+environment (such as installing a new package) may cause version
+conflicts, so it may be wise to either create a new environment, or
+update all packages in the environment when making changes.</p>
+</section>
+<section id="installing-r">
+<h2>Installing R<a class="headerlink" href="#installing-r" title="Link to this heading"></a></h2>
+<p>As well as Python environments, the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> command can also be
+used to create environments for running the <code class="docutils literal notranslate"><span class="pre">R</span></code> program.</p>
+<p>To create an environment containing <code class="docutils literal notranslate"><span class="pre">R</span></code> and <code class="docutils literal notranslate"><span class="pre">rstudio</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda create -n R R rstudio-desktop
+</pre></div>
+</div>
+<p>This will create an environment named <code class="docutils literal notranslate"><span class="pre">R</span></code>, which can be activated with
+<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">R</span></code>, and once the environment is active the <code class="docutils literal notranslate"><span class="pre">R</span></code> and
+<code class="docutils literal notranslate"><span class="pre">rstudio</span></code> programs will be available.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Jupyter-Notebooks-Via-SSH-Tunnelling.html" class="btn btn-neutral float-right" title="Jupyter Notebooks via tunnelling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
