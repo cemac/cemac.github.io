@@ -16,6 +16,7 @@ This page contains documentation and resources for internal and external High Pe
    index.rst
    general/index.rst
    jasmin/index.rst
+   puma/index.rst
    bede/index.rst
    
 
