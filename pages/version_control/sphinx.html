@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Pages with Sphinx &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="HPC Systems" href="../hpc/index.html" />
+    <link rel="prev" title="CEMAC - Encrypting sensitive information on GitHub" href="Sensitive-information.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Version Control</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FCM.html">FCM Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Protocols.html">Good working practices for GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Tips.html">Git tips and tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Forking-Workflow.html">Creating forks on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Pages-at-Leeds.html">Building GitHub Pages with Jekyll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Github-Access-Tokens.html">Github Access tokens - 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gitter.html">Gitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Licensing.html">Licensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sensitive-information.html">CEMAC - Encrypting sensitive information on GitHub</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">GitHub Pages with Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Version Control</a></li>
+      <li class="breadcrumb-item active">GitHub Pages with Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/version_control/sphinx.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="github-pages-with-sphinx">
+<h1>GitHub Pages with Sphinx<a class="headerlink" href="#github-pages-with-sphinx" title="Link to this heading"></a></h1>
+<p>Author: Jon Elsey</p>
+<p><em>N.B. - this guide is WIP and there are few TODOs sprinkled throughout which I need to finish up… but even in its current form should be enough to start out with!</em></p>
+<p>Using Sphinx (in conjunction with GitHub Pages) is a great way to get documentation up for a project, in a way that is (relatively) easy to maintain. In this example, I will demonstrate the use of Sphinx to create a documentation website and create an automatic API reference from your code in a few short steps.</p>
+<section id="what-is-sphinx">
+<h2>What is Sphinx?<a class="headerlink" href="#what-is-sphinx" title="Link to this heading"></a></h2>
+<p>Sphinx is a tool designed to let you generate documentation quickly and easily.</p>
+<p>Sphinx supports reStructured Text and Markdown source files (i.e. the format of the pages you want to display on the website). It then takes these files, and alongside a (usually quite small) configuration script, turns these into HTML that can be deployed on the web. It is customisable, with many different templates available. The one you have likely seen in a lot of places is the ReadTheDocs template.</p>
+<p>An example from my work is the website I created for <code class="docutils literal notranslate"><span class="pre">monarchs</span></code> - a model of ice shelf development written in Python.</p>
+<p><a class="reference external" href="https://monarchs-ice.github.io/monarchs">MONARCHS documentation</a></p>
+<p>Rather than writing a big PDF guide and hosting it somewhere, I took my existing notes (which were OneNote or Markdown files), did a little tidying up and organisation, stuck them in a folder and let Sphinx deploy it for me.</p>
+<p>Another example is this very page - the CEMAC Github.io website was entirely generated using Sphinx.</p>
+<p>My hope here is to reduce your overhead in learning how to use Sphinx, and give you the tools/confidence to create something <em>reasonably</em> good quite quickly!</p>
+</section>
+<section id="let-s-jump-in">
+<h2>Let’s jump in<a class="headerlink" href="#let-s-jump-in" title="Link to this heading"></a></h2>
+<p>Let’s create a new project, and make it a public GitHub repository (so that we can later deploy it using Github Pages).</p>
+<p>In an new virtual environment (or an existing project environment), do</p>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></p>
+<p>Next step - create a directory called <code class="docutils literal notranslate"><span class="pre">docs</span></code>, <code class="docutils literal notranslate"><span class="pre">cd</span></code> to it, and run <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code>.</p>
+<ul class="simple">
+<li><p>(you can skip the creation of the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder, but Sphinx will then create directories in your project root directory which you may not want e.g. if you are adding docs to an existing project)</p></li>
+<li><p>On Windows, Leeds IT admin, in their infinite wisdom, don’t let you run this. Instead, you can do</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">sphinx.cmd.quickstart</span></code> to achieve the same thing.</p></li>
+</ul>
+<p>This will ask you some questions. The one that is not obvious how to answer is the first one. I recommend entering <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p><img alt="image info" src="../../_images/y.gif" /></p>
+<p>This will separate the <code class="docutils literal notranslate"><span class="pre">source</span></code> and <code class="docutils literal notranslate"><span class="pre">build</span></code> directories, i.e. Sphinx will keep your reST/Markdown source files in one place, then build the finished files in another.</p>
+<p>Depending on your answers, this does the following steps:</p>
+<ul class="simple">
+<li><p>Creates <code class="docutils literal notranslate"><span class="pre">/build</span></code> and <code class="docutils literal notranslate"><span class="pre">/source</span></code> folders</p></li>
+<li><p>Creates <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>, which is the main configuration file used by Sphinx.</p>
+<ul>
+<li><p>Within this will be the <code class="docutils literal notranslate"><span class="pre">author</span></code>, <code class="docutils literal notranslate"><span class="pre">project_name</span></code> and <code class="docutils literal notranslate"><span class="pre">release</span></code> that you specified in your answers.</p></li>
+</ul>
+</li>
+<li><p>Creates <code class="docutils literal notranslate"><span class="pre">index.rst</span></code>, which will be the landing page of your project.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">index.rst</span></code> contains what is known as a “<code class="docutils literal notranslate"><span class="pre">toctree</span></code>”, where “<code class="docutils literal notranslate"><span class="pre">toc</span></code>” is shorthand for Table of Contents.</p></li>
+</ul>
+<p>There is a lot of documentation on the <code class="docutils literal notranslate"><span class="pre">toctree</span></code> - most of the time you will just use this to link to other pages you have created. You can do this by adding the name of the document <em>without</em> the file extension.</p>
+<p>Let’s try this now. We will create a file called <code class="docutils literal notranslate"><span class="pre">usage.rst</span></code> and add it to the <code class="docutils literal notranslate"><span class="pre">source</span></code> directory. We will keep the file simple - a header and some text.</p>
+<ul class="simple">
+<li><p>We can also use Markdown, but for now let’s use reST, since Markdown support requires an extension (which will be covered later).</p></li>
+</ul>
+<p>We will then add <code class="docutils literal notranslate"><span class="pre">usage</span></code> to our <code class="docutils literal notranslate"><span class="pre">toctree</span></code> like so:</p>
+<p><img alt="image info" src="../../_images/toctree.png" /></p>
+<p>If you ran <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code>, you may have noticed that it placed a couple of extra files in your folder. One of these is a batch file, <code class="docutils literal notranslate"><span class="pre">make.bat</span></code>. This file is nice, because it lets us do <em>this</em>. From the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder, do</p>
+<p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code></p>
+<p>And voila, Sphinx has built us a website! This workflow is the fundamental building block of Sphinx. We can view our website by looking at the generated .html files in <code class="docutils literal notranslate"><span class="pre">/build</span></code>.</p>
+<p>This is fine, but lacks a little something. What we really want to do, to make our project stand out, is make it look like every other documentation website. We can do this via a template. We add this by the following steps:</p>
+<ul>
+<li><p>Install or create our template. Many of these templates are <code class="docutils literal notranslate"><span class="pre">pip</span></code> installable. Find one you like using Google. I tend to use the Read the Docs theme, since it is nice and clear, and since it is used by many other projects, easy for users to navigate. Let’s try installing this now, via:</p>
+<p>-<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx-rtd-theme</span></code></p>
+</li>
+<li><p>We also need to tell our Sphinx config file to use this theme. Look at <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>. You should notice the following line at the bottom:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">html_theme='alabaster'</span></code>
+Change <code class="docutils literal notranslate"><span class="pre">'alabaster'</span></code> to <code class="docutils literal notranslate"><span class="pre">'sphinx_rtd_theme'</span></code> (note the use of underscores not hyphens!)</p></li>
+</ul>
+</li>
+</ul>
+<p>Now rebuild the documentation with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> (remember to be in the folder with <code class="docutils literal notranslate"><span class="pre">make.bat</span></code> !) and you should see that it uses our nice new theme.</p>
+<p>#TODO-CEMAC - add images stuff here, refer to <code class="docutils literal notranslate"><span class="pre">html_static_path</span></code> here since it the next line in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>
+#TODO-CEMAC - cross-referencing</p>
+</section>
+<section id="extensions">
+<h2>Extensions<a class="headerlink" href="#extensions" title="Link to this heading"></a></h2>
+<section id="myst-parser">
+<h3>myst-parser<a class="headerlink" href="#myst-parser" title="Link to this heading"></a></h3>
+<p>reStructured Text is fine, but personally, I much prefer to use Markdown. Sphinx doesn’t support Markdown out of the box, but we can add it using an extension. These, like the templates from earlier, are very often <code class="docutils literal notranslate"><span class="pre">pip</span></code> installable. To allow us to use Markdown, let’s install the <code class="docutils literal notranslate"><span class="pre">myst-parser</span></code> extension.</p>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">myst-parser</span></code></p>
+<p>Now, we add <code class="docutils literal notranslate"><span class="pre">myst-parser</span></code> as an extension in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>. To do this, add the line:
+<code class="docutils literal notranslate"><span class="pre">extensions</span> <span class="pre">=</span> <span class="pre">['myst_parser']</span></code></p>
+<p>Now let’s create a sample Markdown file, and test it out!</p>
+<p>#TODO-CEMAC - finish the above and test</p>
+</section>
+<section id="autoapi">
+<h3>AutoAPI<a class="headerlink" href="#autoapi" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">autoapi</span></code> is incredibly useful since you can turn your code documentation into website content (so it can be referenced easily). This has advantages -
+- Documentation exists in one place. Keep your code documentation updated, no need to duplicate effort.
+- Encourages proper documentation practices for code you write!</p>
+<p>Let’s try this out!</p>
+</section>
+<section id="napoleon">
+<h3>Napoleon<a class="headerlink" href="#napoleon" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">napoleon</span></code> is highly recommended if (like me) you like to use NumPy style docstrings, and are using AutoAPI (or one of the many similar tools like <code class="docutils literal notranslate"><span class="pre">autodoc</span></code> or <code class="docutils literal notranslate"><span class="pre">autosummary</span></code>) since Sphinx by default doesn’t like these.</p>
+</section>
+</section>
+<section id="deploying-with-github-pages">
+<h2>Deploying with Github Pages<a class="headerlink" href="#deploying-with-github-pages" title="Link to this heading"></a></h2>
+<p><em>N.B. - this may be stuff that the CEMAC team already know, but may be useful to provide an illustrative example</em>.
+<em>N.B. 2 - other hosting services are available! If your project ends up supporting multiple releases, each with different documentation, then something like Read The Docs (from which we have nicked their template!) may be more suitable. (although the free tier comes with ads, eww)</em></p>
+<ul class="simple">
+<li><p>Now that we have our <code class="docutils literal notranslate"><span class="pre">.html</span></code> files, we have all of the content we need for our website. The next step is to deploy it. I recommend using GitHub Actions to do this. This allows for automatic deployment of your documentation, based on a trigger that you set.</p>
+<ul>
+<li><p>For example, for <code class="docutils literal notranslate"><span class="pre">monarchs</span></code>, I have set it up so that documentation is rebuilt whenever a commit or pull request is made to <code class="docutils literal notranslate"><span class="pre">main</span></code>.</p></li>
+</ul>
+</li>
+<li><p>The script I use for this is available on the <code class="docutils literal notranslate"><span class="pre">monarchs</span></code> repo - let’s channel Neil Buchanan (”<em>here’s one I made earlier!”</em>) and “adapt” this now for our little project.</p></li>
+</ul>
+<p><img alt="image info" src="pages/version_control/static/neil.jpg" /></p>
+<ul class="simple">
+<li><p>You may have noticed the scare quotes around “adapt” - since with the folder formatting we have adopted, we can use this script to deploy on Github Pages with precisely <em>zero</em> changes! We add this to a new folder we will create now in the project root folder, ‘<code class="docutils literal notranslate"><span class="pre">github/workflows</span></code>.</p></li>
+<li><p>Then, push this to GitHub. On the repository GitHub page, navigate to <code class="docutils literal notranslate"><span class="pre">Settings</span></code> and then <code class="docutils literal notranslate"><span class="pre">Pages</span></code>.</p>
+<ul>
+<li><p>When this is pushed, and when any subsequent pushes or pull requests are made to <code class="docutils literal notranslate"><span class="pre">main</span></code>, the script will call the commands we used above using a runner, and push the resulting files to a new branch, <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Find <code class="docutils literal notranslate"><span class="pre">Source</span></code> and from there select “Deploy from a branch”. - In the <code class="docutils literal notranslate"><span class="pre">Branch</span></code> section choose <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> and <code class="docutils literal notranslate"><span class="pre">/root</span></code> in the dropdown menus and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>If everything was done correctly - we can now check our website! Navigate to <code class="docutils literal notranslate"><span class="pre">https://&lt;repo_owner_name&gt;.github.io/&lt;repository_name&gt;</span></code></p></li>
+</ul>
+<p>#TODO-CEMAC - finish this up</p>
+<p>The takeaway from this I hope is that Sphinx is a really useful tool which allows you to fit your work to a standard template, and produce reasonably high quality documentation pages with relatively little effort.</p>
+</section>
+<section id="tl-dr">
+<h2>tl;dr<a class="headerlink" href="#tl-dr" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Download Sphinx</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code></p></li>
+<li><p>Write some documentation files</p></li>
+<li><p>Build with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code></p></li>
+<li><p>(optional) Use a non-default template to make your project stand out/look nice</p></li>
+<li><p>Use extensions to make Sphinx do other cool stuff</p></li>
+<li><p>Deploy automatically with Github Pages</p></li>
+</ul>
+</section>
+<section id="extras">
+<h2>Extras<a class="headerlink" href="#extras" title="Link to this heading"></a></h2>
+<p>There is a <em>lot</em> of documentation about stuff you can do with Sphinx. Most of it is, in my opinion, in excessive detail. Any little tips and tricks that I have actually used will be added here.</p>
+<ul class="simple">
+<li><p>Of course, being software developers, if there is something that we want to do and don’t know how, chances are someone else has already done it and StackOverflow has the answer. Sphinx is no different!</p></li>
+<li><p>You can pass other argument types to <code class="docutils literal notranslate"><span class="pre">make</span></code>. For example, you can do
+<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">latexpdf</span></code>
+to invoke LaTeX and create .pdf files.</p></li>
+<li><p>You can nest documentation in folders, e.g. instead of creating a file <code class="docutils literal notranslate"><span class="pre">usage</span></code> in <code class="docutils literal notranslate"><span class="pre">source</span></code>, you could place the reST file in <code class="docutils literal notranslate"><span class="pre">dir</span></code> and add <code class="docutils literal notranslate"><span class="pre">dir1/usage</span></code> into the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> <code class="docutils literal notranslate"><span class="pre">toctree</span></code>.</p>
+<ul>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">maxdepth</span></code> you can see in the <code class="docutils literal notranslate"><span class="pre">toctree</span></code> refers to the degree of nesting that the index page will display for you - it is initialised to 2 by default. For example, if you have a Markdown file with a top header (i.e. a header with one <code class="docutils literal notranslate"><span class="pre">#</span></code>) called ‘Introduction’, and two sub-headers (two <code class="docutils literal notranslate"><span class="pre">#</span></code>es) ‘Foo’ and ‘Bar’, then with <code class="docutils literal notranslate"><span class="pre">:maxdepth:</span> <span class="pre">1</span></code> the table of contents will just say ‘Introduction’, with <code class="docutils literal notranslate"><span class="pre">:maxdepth:</span> <span class="pre">2</span></code> it will show Introduction, then nested within this it will contain ‘Foo’ and ‘Bar’, etc.</p></li>
+</ul>
+</li>
+<li><p>An example how how you might want to use this is if you were creating a website for some training material, you could organise them by “module” or by lecture into different folders.</p></li>
+</ul>
+<section id="other-extensions">
+<h3>Other extensions<a class="headerlink" href="#other-extensions" title="Link to this heading"></a></h3>
+<p>Sphinx has support for a number of other extensions. The ones I use are covered here.</p>
+<p><code class="docutils literal notranslate"><span class="pre">doctest</span></code> -
+<code class="docutils literal notranslate"><span class="pre">duration</span></code> - Displays information about how e.g. how long it takes for your documentation to build.</p>
+<p>#TODO-CEMAC - video extension, see LFRic Sphinx docs page for an example
+#TODO-CEMAC - Support for images inside reST files, best practices (including a <code class="docutils literal notranslate"><span class="pre">_static</span></code> folder for example)
+#TODO-CEMAC - Sphinx-fortran! In active development</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Sensitive-information.html" class="btn btn-neutral float-left" title="CEMAC - Encrypting sensitive information on GitHub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../hpc/index.html" class="btn btn-neutral float-right" title="HPC Systems" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

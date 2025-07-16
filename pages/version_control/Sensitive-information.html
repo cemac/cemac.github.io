@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEMAC - Encrypting sensitive information on GitHub &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="GitHub Pages with Sphinx" href="sphinx.html" />
+    <link rel="prev" title="Licensing" href="Licensing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Version Control</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FCM.html">FCM Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Protocols.html">Good working practices for GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Tips.html">Git tips and tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Forking-Workflow.html">Creating forks on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Pages-at-Leeds.html">Building GitHub Pages with Jekyll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Github-Access-Tokens.html">Github Access tokens - 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gitter.html">Gitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Licensing.html">Licensing</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CEMAC - Encrypting sensitive information on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx.html">GitHub Pages with Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Version Control</a></li>
+      <li class="breadcrumb-item active">CEMAC - Encrypting sensitive information on GitHub</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/version_control/Sensitive-information.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cemac-encrypting-sensitive-information-on-github">
+<h1>CEMAC - Encrypting sensitive information on GitHub<a class="headerlink" href="#cemac-encrypting-sensitive-information-on-github" title="Link to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#Description"><span class="xref myst">Description</span></a></p></li>
+<li><p><a class="reference internal" href="#Requirements"><span class="xref myst">Requirements</span></a></p></li>
+<li><p><a class="reference internal" href="#Installation"><span class="xref myst">Installation</span></a></p></li>
+<li><p><a class="reference internal" href="#Credentials"><span class="xref myst">Credentials</span></a></p></li>
+<li><p><a class="reference internal" href="#Encrypting"><span class="xref myst">Encrypting</span></a></p></li>
+<li><p><a class="reference internal" href="#Decrypting"><span class="xref myst">Decrypting</span></a></p></li>
+</ul>
+</section>
+<section id="description">
+<h2>Description:<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p>For many repositories, the code is open source some key information such as a password or API key is not to be made public. It would be useful to store this information securely on git, for jupyterhub_on_azure documentation, I highlight some security flaws that should be addressed in the future - not super critical information but not sensible to highlight to the world. This is a perfect case study for trying out <a class="reference external" href="https://github.com/AGWA/git-crypt">git-crypt</a>. Encrypts using GPG keys - i.e. can generate a CEMAC key shared between all CEMAC staff so we can version control and store the sensitive files on the repository.</p>
+</section>
+<section id="requirements">
+<h2>Requirements:<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>git (standard on Leeds Centos)</p></li>
+<li><p>openssl (standard on Leeds Centos)</p></li>
+<li><p>gpg (standard on Leeds Centos)</p></li>
+</ul>
+</section>
+<section id="installation">
+<h2>Installation:<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p>(UNIX)</p>
+<p>See <a class="reference external" href="https://github.com/AGWA/git-crypt/blob/master/INSTALL.md">documentation</a> for other platforms.</p>
+<p>Very simple install</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w">  </span>https://github.com/AGWA/git-crypt.git
+make
+make<span class="w"> </span>install<span class="w"> </span><span class="nv">PREFIX</span><span class="o">=</span><span class="nv">$HOME</span>/SW/bin
+</pre></div>
+</div>
+<p><strong>$HOME/SW/bin must be in your path to use git-crypt</strong></p>
+<hr>
+</section>
+<section id="credentials">
+<h2>Credentials<a class="headerlink" href="#credentials" title="Link to this heading"></a></h2>
+<p><strong>If using setting up new keys go to <a class="reference internal" href="#Encrypting"><span class="xref myst">Encrypting</span></a></strong></p>
+<p><strong>Exporting</strong> cemac keys</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gpg</span> <span class="o">--</span><span class="n">export</span><span class="o">-</span><span class="n">secret</span><span class="o">-</span><span class="n">key</span> <span class="o">-</span><span class="n">a</span> <span class="s2">&quot;cemacgeneric&quot;</span> <span class="o">&gt;</span> <span class="n">cemac_private</span><span class="o">.</span><span class="n">key</span>
+<span class="n">gpg</span> <span class="o">--</span><span class="n">export</span> <span class="o">-</span><span class="n">a</span> <span class="s2">&quot;cemacgeneric&quot;</span> <span class="o">&gt;</span> <span class="n">cemac_public</span><span class="o">.</span><span class="n">key</span>
+</pre></div>
+</div>
+<p>These files can then be securely copied to the target machine and then imported.</p>
+<p><strong>Importing</strong> the public and private keys</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gpg</span> <span class="o">--</span><span class="kn">import</span> <span class="nn">cemac_public.key</span>
+<span class="n">gpg</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">secret</span><span class="o">-</span><span class="n">key</span><span class="o">-</span><span class="kn">import</span> <span class="o">--</span><span class="kn">import</span> <span class="nn">cemac_private.key</span>
+</pre></div>
+</div>
+<p>You should see something like</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gpg:<span class="w"> </span>key<span class="w"> </span>5A5E6934:<span class="w"> </span>public<span class="w"> </span>key<span class="w"> </span><span class="s2">&quot;CEMAC (cemacgeneric) &lt;cemac@leeds.ac.uk&gt;&quot;</span><span class="w"> </span>
+imported
+gpg:<span class="w"> </span>Total<span class="w"> </span>number<span class="w"> </span>processed:<span class="w"> </span><span class="m">1</span>
+gpg:<span class="w">               </span>imported:<span class="w"> </span><span class="m">1</span><span class="w">  </span><span class="o">(</span>RSA:<span class="w"> </span><span class="m">1</span><span class="o">)</span>
+gpg:<span class="w"> </span>no<span class="w"> </span>ultimately<span class="w"> </span>trusted<span class="w"> </span>keys<span class="w"> </span>found
+
+
+gpg:<span class="w"> </span>key<span class="w"> </span>5A5E6934:<span class="w"> </span>secret<span class="w"> </span>key<span class="w"> </span>imported
+gpg:<span class="w"> </span>key<span class="w"> </span>5A5E6934:<span class="w"> </span><span class="s2">&quot;CEMAC (cemacgeneric) &lt;cemac@leeds.ac.uk&gt;&quot;</span><span class="w"> </span>not<span class="w"> </span>changed
+gpg:<span class="w"> </span>Total<span class="w"> </span>number<span class="w"> </span>processed:<span class="w"> </span><span class="m">1</span>
+gpg:<span class="w">              </span>unchanged:<span class="w"> </span><span class="m">1</span>
+gpg:<span class="w">       </span>secret<span class="w"> </span>keys<span class="w"> </span>read:<span class="w"> </span><span class="m">1</span>
+gpg:<span class="w">   </span>secret<span class="w"> </span>keys<span class="w"> </span>imported:<span class="w"> </span><span class="m">1</span>
+</pre></div>
+</div>
+<p><strong>check</strong> <code class="docutils literal notranslate"><span class="pre">gpg</span> <span class="pre">--list-secret-keys</span></code> shows the cemac key safely in your gpg secring</p>
+<p><strong>delete</strong> the <code class="docutils literal notranslate"><span class="pre">cemac_private.key</span></code></p>
+<p><em>Note: I needed to edit the trust level for the imported key</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gpg</span> <span class="o">--</span><span class="n">edit</span><span class="o">-</span><span class="n">key</span> <span class="o">&lt;</span><span class="n">key_id</span><span class="o">&gt;</span>
+<span class="n">gpg</span><span class="o">&gt;</span> <span class="n">trust</span>
+</pre></div>
+</div>
+<hr>
+</section>
+<section id="encrypting">
+<h2>Encrypting:<a class="headerlink" href="#encrypting" title="Link to this heading"></a></h2>
+<p><em>(skip to <a class="reference internal" href="#Credentials"><span class="xref myst">Credentials</span></a> if unlocking an already git-crypted file)</em></p>
+<ol class="arabic simple" start="0">
+<li><p>Generating Keys (skip if using the cemac key)</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gpg<span class="w"> </span>--gen-key
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Select RSA and RSA (default), 4096 bits, doesn’t expire, name and email, (o)kay</p></li>
+<li><p>I created a key for myself and a cemac key to share</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Initialise</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>repo
+git-crypt<span class="w"> </span>init
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Create a .gitattributes file. An example is in this repository</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>*.key<span class="w"> </span><span class="nv">filter</span><span class="o">=</span>git-crypt<span class="w"> </span><span class="nv">diff</span><span class="o">=</span>git-crypt
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Add users to git crypt
+<code class="docutils literal notranslate"><span class="pre">git-crypt</span> <span class="pre">add-gpg-user</span> <span class="pre">USER_ID</span></code>
+e.g.
+<code class="docutils literal notranslate"><span class="pre">git-crypt</span> <span class="pre">add-gpg-user</span> <span class="pre">cemac&#64;leeds.ac.uk</span></code></p></li>
+<li><p>Add and commit the file. Push to git.</p></li>
+</ol>
+<ul class="simple">
+<li><p>see <a class="reference external" href="https://github.com/cemac/cemac_generic/blob/master/secret.key">secret.key</a></p></li>
+<li><p>You can not view the file on git hub or download as plain text.</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p>Cemac staff obtain the cemac-key from cemachelen</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git-crypt</span> <span class="pre">unlock</span></code> to access the file when cloning or pulling.</p></li>
+</ol>
+<hr> 
+</section>
+<section id="decrypting">
+<h2>Decrypting<a class="headerlink" href="#decrypting" title="Link to this heading"></a></h2>
+<p>Once you have installed the cemac key then you can run:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git-crypt</span> <span class="pre">unlock</span></code></p>
+<p>after pulling from or cloning the target repo.</p>
+<hr> 
+</section>
+<section id="summary">
+<h2>Summary:<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
+<p>This seems like a suitable simple solution to keys and secrets being scattered across individual files spaces.</p>
+</section>
+<section id="alternative">
+<h2>Alternative:<a class="headerlink" href="#alternative" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Encrypt keys with the cemac staffs public key before sharing.</p></li>
+<li><p>Add users individually with git-crypt i.e. we all store each other’s public keys and add those users - could be annoying to remember to add everyone.</p></li>
+<li><p>Simply encrypt with a cemac public key so secret files simply read —begin pgp message  kakjfshdkfhwrupg –end pgp message.  <em>Personal thoughts are that, that is less user friendly</em>.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Licensing.html" class="btn btn-neutral float-left" title="Licensing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sphinx.html" class="btn btn-neutral float-right" title="GitHub Pages with Sphinx" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

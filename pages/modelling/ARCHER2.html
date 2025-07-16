@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCHER2 notes for UM &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="USING ECMWF DATA" href="ECMWF_Data.html" />
+    <link rel="prev" title="Numerical Modelling" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version_control/index.html">Version Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Numerical Modelling</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ARCHER2 notes for UM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#archiving">Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ECMWF_Data.html">USING ECMWF DATA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ECMWF_Data.html#building-eccodes">Building eccodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Guides_and_Tools.html">Guides and Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_Links.html">Links Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_Links.html#information-about-latest-configurations">Information about latest configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_gotchas.html">General UM tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_gotchas.html#debugging-tips">Debugging tips</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Numerical Modelling</a></li>
+      <li class="breadcrumb-item active">ARCHER2 notes for UM</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/modelling/ARCHER2.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="archer2-notes-for-um">
+<h1>ARCHER2 notes for UM<a class="headerlink" href="#archer2-notes-for-um" title="Link to this heading"></a></h1>
+<p>These are some tips for transfering from ARCHER to ARCHER 2 (access via PUMA)</p>
+<section id="information">
+<h2>information<a class="headerlink" href="#information" title="Link to this heading"></a></h2>
+<p>NCAS CMS have some usefull information on how to modify your suite.</p>
+<ul class="simple">
+<li><p>LINUX must be set to background (from at)</p></li>
+<li><p>site/archer.rc and ncas_cray  might be required to run</p></li>
+</ul>
+<section id="met-office-password-cahce">
+<h3>Met office password cahce<a class="headerlink" href="#met-office-password-cahce" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">mosrs-cache-password</span> </code></p>
+</section>
+<section id="permission-errors">
+<h3>Permission errors<a class="headerlink" href="#permission-errors" title="Link to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rm -f  ~/.ssh/environment.puma
+eval `ssh-agent -s`
+ssh-add -D
+ssh-add ~/.ssh/id_rsa_archerum
+</pre></div>
+</div>
+<p>weird FCM make permission error… not always ? Sometimes runs fine ?</p>
+</section>
+</section>
+<section id="archer-2">
+<h2>ARCHER 2<a class="headerlink" href="#archer-2" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://cms.ncas.ac.uk/archer2/unified-model/">CMS UM on archer 2 pages</a></p>
+<ol class="arabic simple">
+<li><p>Follow on boarding instructions</p></li>
+<li><p>run example suite</p></li>
+<li><p>~/.bash_profile  edit on ARCHER 2</p></li>
+<li><p>edit or add <code class="docutils literal notranslate"><span class="pre">site/archer2.rc</span></code> type file or <code class="docutils literal notranslate"><span class="pre">site/ncas_cray_ex/suite-adds.rc</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--chdir=/work/n02/n02/&lt;your</span> <span class="pre">ARCHER2</span> <span class="pre">user</span> <span class="pre">name&gt;</span></code>  line must be edited</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="slurm-commands">
+<h2>SLURM COMMANDS<a class="headerlink" href="#slurm-commands" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">sinfo</span></code>  information on nodes available</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">squeue</span> <span class="pre">-l</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">$USER</span></code> check if your jobs are running</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">squeue</span> <span class="pre">-l</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">PENDING</span> <span class="pre">|</span> <span class="pre">wc</span> <span class="pre">-l</span></code> how long is the queue</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">squeue</span> <span class="pre">-R</span> <span class="pre">shortqos</span></code> check the short queue</p></li>
+</ul>
+</section>
+<section id="gotchas">
+<h2>Gotchas<a class="headerlink" href="#gotchas" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>WALLCLOCK LIMIT in some suites is in minutes not seconds there 60 is 1 hour not 1 min
+this can be fixed editing <code class="docutils literal notranslate"><span class="pre">bin/setup_metadata</span></code></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;WALL_CLOCK_LIMIT=20</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;range=1:172800</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and <code class="docutils literal notranslate"><span class="pre">meta/rose-meta.conf</span></code> swapping <code class="docutils literal notranslate"><span class="pre">range=60:172800</span></code> to <code class="docutils literal notranslate"><span class="pre">range=1:172800</span></code></p>
+<ul class="simple">
+<li><p>Node is 8x8 CPUS (actually 128 cores as hyper threaded)</p></li>
+<li><p>Python mismatches - if loading in cray-python must load after other cyclc tasks and unload in after in pre scripts</p></li>
+<li><p>Nesting Suite archer suite had reference to short partition which does not exist short q is accessed by short reservation on standard partition</p></li>
+<li><p>short q limited to 1 running 1 queuing</p></li>
+</ul>
+</section>
+</section>
+<section id="archiving">
+<h1>Archiving<a class="headerlink" href="#archiving" title="Link to this heading"></a></h1>
+<p>There are various methods for archiving specifical for JASMIN :</p>
+<p>suite u-de766 is an example of a nested suite with auto archiving of data</p>
+<p>Here an extra rose task has been added to run at the end of each cycle to archive the data to a GWS folder.</p>
+<p><em>coming soon UM13 RA3 nested suite barebones with archer2 era5 fixes, ants and archiving enabled</em></p>
+<section id="i-o-issues">
+<h2>I/O issues<a class="headerlink" href="#i-o-issues" title="Link to this heading"></a></h2>
+<p>If having I/O issues consider using the high performance scratch space, this deletes data automatically so not for any lasting storage.</p>
+<p>https://docs.archer2.ac.uk/user-guide/data/#solid-state-nvme-file-system-scratch-storage</p>
+<p>to <code class="docutils literal notranslate"><span class="pre">rose-suite.conf</span></code> add the following lines to the top</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>root-dir{share}=ln*=/mnt/lustre/a2fs-nvme/work/n02/n02/$USER
+root-dir{work}=ln*=/mnt/lustre/a2fs-nvme/work/n02/n02/$USER
+</pre></div>
+</div>
+</section>
+<section id="module-fails">
+<h2>Module fails<a class="headerlink" href="#module-fails" title="Link to this heading"></a></h2>
+<p>Job fails with error logs not finding modules in old suites</p>
+<p><code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">restore</span> <span class="pre">module</span></code> yields : <code class="docutils literal notranslate"><span class="pre">Lmod</span> <span class="pre">has</span> <span class="pre">detected</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">error:</span>&#160; <span class="pre">User</span> <span class="pre">module</span> <span class="pre">collection:</span> <span class="pre">&quot;2020.12.14&quot;</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">exist.</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">restore</span></code> is no longer a command. <code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">um</span></code> will load um modules</p>
+</section>
+<section id="transitioning-to-23-cab-from-4-cab-suites-pre-2021">
+<h2>Transitioning to 23-cab from 4 cab (suites pre-2021)<a class="headerlink" href="#transitioning-to-23-cab-from-4-cab-suites-pre-2021" title="Link to this heading"></a></h2>
+<p>Main files that need altering:</p>
+<p><code class="docutils literal notranslate"><span class="pre">site/ncas-cray-ex/suite-adds.rc</span></code></p>
+<p>all <code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">restore</span></code> commands must be modified to something like:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">MODULEPATH</span><span class="o">=</span><span class="nv">$MODULEPATH</span>:/work/n02/n02/simon/modulefiles
+module<span class="w"> </span>load<span class="w"> </span>um
+</pre></div>
+</div>
+<p>the CAP9.1 path must be altered</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># replace</span>
+<span class="c1"># export PATH=/work/n02/n02/grenvill/CAP9.1/build/bin:$PATH</span>
+<span class="c1"># with</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/work/y07/shared/umshared/CAP9.1/build/bin:<span class="nv">$PATH</span>
+</pre></div>
+</div>
+<p>CAP9 path must also be altered in:</p>
+<p><code class="docutils literal notranslate"><span class="pre">app/install_cold/opt/rose-app-ncas-cray-ex.conf</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># replace</span>
+<span class="c1"># source=/work/n02/n02/grenvill/CAP9.1/build/bin</span>
+<span class="c1"># with</span>
+<span class="nv">source</span><span class="o">=</span>/work/y07/shared/umshared/CAP9.1/build/bin
+</pre></div>
+</div>
+</section>
+<section id="um-source-code-mods">
+<h2>UM source code mods<a class="headerlink" href="#um-source-code-mods" title="Link to this heading"></a></h2>
+<p>Depending on which version of the UM more or less modifications will be required:</p>
+</section>
+<section id="cce-fixes">
+<h2>CCE fixes<a class="headerlink" href="#cce-fixes" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://code.metoffice.gov.uk/trac/um/ticket/6464">UKCA CC12 fixes</a></p>
+<p>An easy way to find the required mods is to browse <a class="reference external" href="https://code.metoffice.gov.uk/trac/um/browser/main/branches/dev/jeffcole">Jeff Coles UM code</a> select the version you’re interested in and search the revision log for the “cce12 fixes” in Jeff Coles code. View the revision log and view the changes related the CCE12</p>
+<p>e.g. for vn 11.2 the following files need to be modified</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atmosphere</span><span class="o">/</span><span class="n">AC_assimilation</span><span class="o">/</span><span class="n">getobs</span><span class="o">.</span><span class="n">F90</span> <span class="p">(</span><span class="mi">4</span> <span class="n">diffs</span><span class="p">)</span>
+<span class="n">atmosphere</span><span class="o">/</span><span class="n">UKCA</span><span class="o">/</span><span class="n">ukca_activ_mod</span><span class="o">.</span><span class="n">F90</span> <span class="p">(</span><span class="mi">1</span> <span class="n">diff</span><span class="p">)</span>
+<span class="n">atmosphere</span><span class="o">/</span><span class="n">UKCA</span><span class="o">/</span><span class="n">ukca_calc_drydiam</span><span class="o">.</span><span class="n">F90</span> <span class="p">(</span><span class="mi">2</span> <span class="n">diffs</span><span class="p">)</span>
+<span class="n">atmosphere</span><span class="o">/</span><span class="n">UKCA</span><span class="o">/</span><span class="n">ukca_volume_mode</span><span class="o">.</span><span class="n">F90</span> <span class="p">(</span><span class="mi">6</span> <span class="n">diffs</span><span class="p">)</span>
+<span class="n">atmosphere</span><span class="o">/</span><span class="n">boundary_layer</span><span class="o">/</span><span class="n">bdy_expl2</span><span class="o">.</span><span class="n">F90</span> <span class="p">(</span><span class="mi">2</span> <span class="n">diffs</span><span class="p">)</span>
+<span class="n">utility</span><span class="o">/</span><span class="n">qxreconf</span><span class="o">/</span><span class="n">rcf_h_int_nearest_mod</span><span class="o">.</span><span class="n">F90</span> <span class="p">(</span><span class="mi">2</span> <span class="n">diffs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is highlighted here: <a class="reference external" href="https://code.metoffice.gov.uk/trac/um/changeset?reponame=&amp;amp;new=104769%40main%2Fbranches%2Fdev%2Fjeffcole%2Fvn11.2_archer2_fixes&amp;amp;old=61261%40main%2Ftrunk">UKCA and other Code fixes examples</a></p>
+</section>
+<section id="cce-15">
+<h2>CCE 15<a class="headerlink" href="#cce-15" title="Link to this heading"></a></h2>
+<p>make the edits suggested by NCAS CMS <a class="reference external" href="https://cms.ncas.ac.uk/archer2/os-upgrade/">https://cms.ncas.ac.uk/archer2/os-upgrade/</a></p>
+<p><em>coming soon nested suite with CCE15 mods</em></p>
+<section id="troubleshooting">
+<h3>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Access issue
+<code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">login.archer2.ac.uk</span></code></p></li>
+</ol>
+<p>returns</p>
+<p><code class="docutils literal notranslate"><span class="pre">PTY</span> <span class="pre">allocation</span> <span class="pre">request</span> <span class="pre">failed</span> <span class="pre">on</span> <span class="pre">channel</span> <span class="pre">0</span></code>
+<code class="docutils literal notranslate"><span class="pre">bash:</span> <span class="pre">/home1/z00/puma-access-route/bin/pumawrapper:</span> <span class="pre">No</span> <span class="pre">such</span> <span class="pre">file</span> <span class="pre">or</span>&#160; <span class="pre">directory</span></code></p>
+<p>check the path in</p>
+<p><code class="docutils literal notranslate"><span class="pre">/home1/system/puma-access-route/keys/$USER</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">/home1/z00/</span></code> should be <code class="docutils literal notranslate"><span class="pre">/home1/system/</span></code></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Numerical Modelling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ECMWF_Data.html" class="btn btn-neutral float-right" title="USING ECMWF DATA" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

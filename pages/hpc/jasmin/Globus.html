@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Globus Transfers (JASMIN ARC4 example) &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/twemoji.css" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../../_static/twemoji.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="JASMIN Tape Storage" href="JASMIN_TAPE.html" />
+    <link rel="prev" title="JASMIN" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../version_control/index.html">Version Control</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">HPC Systems</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general/index.html">General</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">JASMIN</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Globus Transfers (JASMIN ARC4 example)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="JASMIN_TAPE.html">JASMIN Tape Storage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../puma/index.html">PUMA2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bede/index.html">Bede</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">HPC Systems</a></li>
+          <li class="breadcrumb-item"><a href="index.html">JASMIN</a></li>
+      <li class="breadcrumb-item active">Globus Transfers (JASMIN ARC4 example)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/pages/hpc/jasmin/Globus.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="globus-transfers-jasmin-arc4-example">
+<h1>Globus Transfers (JASMIN ARC4 example)<a class="headerlink" href="#globus-transfers-jasmin-arc4-example" title="Link to this heading"></a></h1>
+<p><em>AUTHORS: Richard Rigby and Helen Burns</em></p>
+<p>Web links:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://help.jasmin.ac.uk/article/4480-data-transfer-tools-globus-command-line-interface">https://help.jasmin.ac.uk/article/4480-data-transfer-tools-globus-command-line-interface</a></p></li>
+<li><p><a class="reference external" href="https://docs.globus.org/how-to/globus-connect-personal-linux/">https://docs.globus.org/how-to/globus-connect-personal-linux/</a></p></li>
+</ul>
+<p>Requires globus-cli:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/globus/globus-cli">https://github.com/globus/globus-cli</a></p></li>
+</ul>
+<p>and Globus Personal Connect:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://downloads.globus.org/globus-connect-personal/linux/stable/globusconnectpersonal-latest.tgz">https://downloads.globus.org/globus-connect-personal/linux/stable/globusconnectpersonal-latest.tgz</a></p></li>
+<li><p>Requirements for Jasmin transfer</p></li>
+<li><p>CEDA account (<em>NB passwords must be short here</em>)</p></li>
+<li><p>Jasmin account</p></li>
+<li><p>Request access to xhpcfer service</p></li>
+<li><p>link CEDA account</p></li>
+<li><p><em>wait ~ 48 hours if updating access on ceda/jasmin</em></p></li>
+</ul>
+<p><strong>NB Jasmin will require you to give IP address of the machine you will connect with</strong></p>
+<section id="step-by-step">
+<h2>Step by step<a class="headerlink" href="#step-by-step" title="Link to this heading"></a></h2>
+<p>On the machine that you wish to transfer from:</p>
+</section>
+<section id="first-set-up">
+<h2>First set up<a class="headerlink" href="#first-set-up" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="s2">&quot;https://github.com/globus/globus-cli&quot;</span>
+<span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">gc</span>
+<span class="o">.</span> <span class="o">./</span><span class="n">gc</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+<span class="n">cd</span> <span class="n">globus</span><span class="o">-</span><span class="n">cli</span><span class="o">/</span>
+<span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+<span class="n">cd</span> <span class="o">..</span>
+<span class="n">globus</span> <span class="n">login</span>
+</pre></div>
+</div>
+<p>Navigate to the url displayed and login with globus credetials e.g. with your ORCID - you may need to register with globus</p>
+<p>Now set up your personal endpoint:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="s2">&quot;https://downloads.globus.org/globus-connect-personal/linux/stable/globusconnectpersonal-latest.tgz&quot;</span>
+<span class="n">tar</span> <span class="n">xzf</span> <span class="n">globusconnectpersonal</span><span class="o">-</span><span class="n">latest</span><span class="o">.</span><span class="n">tgz</span> 
+<span class="o">./</span><span class="n">globusconnectpersonal</span><span class="o">-</span><span class="mf">3.1.2</span><span class="o">/</span><span class="n">globusconnectpersonal</span> <span class="o">-</span><span class="n">start</span> <span class="o">&gt;&amp;</span> <span class="n">gcp</span><span class="o">.</span><span class="n">log</span> <span class="o">&amp;</span>
+<span class="n">globus</span> <span class="n">endpoint</span> <span class="n">create</span> <span class="o">--</span><span class="n">personal</span> <span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;</span><span class="n">_endpoint</span>
+</pre></div>
+</div>
+<p>This will display a long string of numbers and letters for the set-up key and endpoint address. Set these as named variables rather than trying to remember a string:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ep2</span><span class="o">=&lt;</span><span class="n">string1</span><span class="o">&gt;</span>
+<span class="n">setkey</span><span class="o">=&lt;</span><span class="n">string2</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Before setting up your end point first create a transfer folder that globus will be able to see and set it up:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mkdir /nobackup/&lt;user&gt;/globustransfer` 
+cat ~/.globusonline/lta/config-paths
+/nobackup/&lt;user&gt;/globustransfer/,0,1
+</pre></div>
+</div>
+<p>use the set up key displayed earlier or your variable</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>./globusconnectpersonal-3.1.2/globusconnect -setup $setkey
+./globusconnectpersonal-3.1.2/globusconnectpersonal -start
+</pre></div>
+</div>
+<p>Check it’s there:
+<code class="docutils literal notranslate"><span class="pre">globus</span> <span class="pre">endpoint</span> <span class="pre">search</span> <span class="pre">--filter-scope</span> <span class="pre">my-endpoints</span></code>
+your endpoint should appear and you should be able to see in that folder with globus</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="o">/</span><span class="n">nobackup</span><span class="o">/&lt;</span><span class="n">user</span><span class="o">&gt;/</span><span class="n">globustransfer</span><span class="o">/</span><span class="n">test</span>
+<span class="n">globus</span> <span class="n">ls</span> <span class="n">b96e2d7e</span><span class="o">-</span><span class="n">f01e</span><span class="o">-</span><span class="mf">11e9</span><span class="o">-</span><span class="mi">8</span><span class="n">a5b</span><span class="o">-</span><span class="mf">0e35</span><span class="n">e66293c2</span>
+</pre></div>
+</div>
+<p>Now set up the Jasmin endpoint:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">globus</span> <span class="n">endpoint</span> <span class="n">search</span> <span class="s2">&quot;jasmin gridftp server&quot;</span>
+
+</pre></div>
+</div>
+<p>name the string displayed</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ep1=&lt;string3&gt;
+globus ls $ep1
+globus endpoint activate $ep1 --myproxy -U &lt;cedausername&gt;
+globus ls $ep1
+</pre></div>
+</div>
+<p>do a test transfer</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>globus transfer $ep2:test $ep1:/dev/shm/gc/data/test
+globus task list
+./globusconnectpersonal-2.3.9/globusconnectpersonal -stop
+</pre></div>
+</div>
+</section>
+<section id="after-installation">
+<h2>After installation<a class="headerlink" href="#after-installation" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>. ./gc/bin/activate
+globus login
+./globusconnectpersonal-3.1.2/globusconnectpersonal -start &gt;&amp; gcp.log &amp;
+globus endpoint create --personal helen_endpoint
+./globusconnectpersonal-3.1.2/globusconnect -setup &lt;set-up-key&gt;
+globus endpoint search --filter-scope my-endpoints
+ep1=&lt;my-endpoint&gt;
+globus endpoint search &quot;jasmin gridftp server&quot;
+ep2=&lt;jasmincd-endpoint&gt;
+globus endpoint activate $ep2 --myproxy -U &lt;USERNAME&gt;
+</pre></div>
+</div>
+<hr>
+</section>
+<section id="gotchas">
+<h2>Gotchas<a class="headerlink" href="#gotchas" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>To do globus transfers you need access to all the different components. Remember to use your CEDA (rather than Jasmin) credentials (which must be linked with a Jasmin account)</p></li>
+<li><p>Globus transfers can time out and take a while to let you know they failed, so check the status here: <a class="reference external" href="https://app.globus.org/activity">https://app.globus.org/activity</a></p></li>
+<li><p><em>file path not allowed</em> errors: The end point is set up from a specific folder (by default your home directory) you can edit this file
+<code class="docutils literal notranslate"><span class="pre">~/.globusonline/lta/config-paths</span></code></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="JASMIN" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="JASMIN_TAPE.html" class="btn btn-neutral float-right" title="JASMIN Tape Storage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

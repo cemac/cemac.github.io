@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using Bede &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/twemoji.css" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../../_static/twemoji.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="AI and Machine Learning" href="../../ai_ml/index.html" />
+    <link rel="prev" title="Bede" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../version_control/index.html">Version Control</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">HPC Systems</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general/index.html">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jasmin/index.html">JASMIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../puma/index.html">PUMA2</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Bede</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Using Bede</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">HPC Systems</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Bede</a></li>
+      <li class="breadcrumb-item active">Using Bede</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/pages/hpc/bede/Using-Bede.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div align="center">
+<a href="https://www.cemac.leeds.ac.uk/">
+  <img src="https://github.com/cemac/cemac_generic/blob/master/Images/cemac.png"></a>
+  <br>
+</div>
+<section id="using-bede">
+<h1>Using Bede<a class="headerlink" href="#using-bede" title="Link to this heading"></a></h1>
+<section id="what-is-bede">
+<h2>What is Bede?<a class="headerlink" href="#what-is-bede" title="Link to this heading"></a></h2>
+<p>Bede is the N8’s Tier 2 Power and GPU-based high-performance computing (HPC) platform. the main nodes are IBM P9 and each one has 4 GPU cards. there is also a GH200 node.</p>
+</section>
+<section id="resources-available">
+<h2>Resources available<a class="headerlink" href="#resources-available" title="Link to this heading"></a></h2>
+<section id="x-main-gpu-nodes-each-node-ibm-ac922-has">
+<h3>32x Main GPU nodes, each node (IBM AC922) has:<a class="headerlink" href="#x-main-gpu-nodes-each-node-ibm-ac922-has" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>512GB DDR4 RAM</p></li>
+<li><p>2x IBM POWER9 CPUs (and two NUMA nodes), with</p></li>
+<li><p>4x NVIDIA V100 GPUs (2 per CPU)</p></li>
+<li><p>Each CPU is connected to its two GPUs via high-bandwidth, low-latency NVLink interconnects (helps if you need to move lots of data to/from GPU memory)</p></li>
+</ul>
+</section>
+<section id="x-inferencing-nodes">
+<h3>4x Inferencing Nodes:<a class="headerlink" href="#x-inferencing-nodes" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Equipped with T4 GPUs for inference tasks.</p></li>
+</ul>
+</section>
+<section id="other">
+<h3>Other<a class="headerlink" href="#other" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>2x Visualisation nodes</p></li>
+<li><p>2x Login nodes</p></li>
+</ul>
+</section>
+</section>
+<section id="filestores">
+<h2>Filestores<a class="headerlink" href="#filestores" title="Link to this heading"></a></h2>
+<p>The filestore layout is similar to that of the ARC system. In addition to the locations below, there is also a 20GB project folder that persists.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/home</span></code> - 4.9TB shared (Lustre) drive for all users.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/nobackup</span></code> - 2PB shared (Lustre) drive for all users.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/tmp</span></code> - Temporary local node SSD storage.</p></li>
+</ul>
+</section>
+<section id="logging-in">
+<h2>Logging in<a class="headerlink" href="#logging-in" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-l</span> <span class="pre">&lt;username&gt;</span> <span class="pre">bede.dur.ac.uk</span></code></p>
+</section>
+<section id="saving-project-name-as-env-variable">
+<h2>Saving project name as env variable<a class="headerlink" href="#saving-project-name-as-env-variable" title="Link to this heading"></a></h2>
+<p>Add the following line to your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">cemac='&lt;your</span> <span class="pre">project</span> <span class="pre">name&gt;'</span></code></p>
+</section>
+<section id="loading-an-interactive-shell">
+<h2>Loading an interactive shell<a class="headerlink" href="#loading-an-interactive-shell" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">srun</span> <span class="pre">-A</span> <span class="pre">$cemac</span> <span class="pre">--job-name=”prototyping&quot;</span> <span class="pre">--gres=gpu:1</span> <span class="pre">--time=00:20:00</span> <span class="pre">--pty</span> <span class="pre">bash</span></code></p>
+<p>Options and submission scripts info can be found <a href='https://bede-documentation.readthedocs.io/en/latest/usage/index.html#login'> here </a></p>
+</section>
+<section id="installing-miniconda-with-power-9-support">
+<h2>Installing MiniConda with Power 9 support<a class="headerlink" href="#installing-miniconda-with-power-9-support" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">repo</span><span class="o">.</span><span class="n">anaconda</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">miniconda</span><span class="o">/</span><span class="n">Miniconda3</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">ppc64le</span><span class="o">.</span><span class="n">sh</span><span class="p">;</span>
+<span class="n">bash</span> <span class="n">Miniconda3</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">ppc64le</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-a-test-conda-environment">
+<h2>Creating a Test Conda Environment<a class="headerlink" href="#creating-a-test-conda-environment" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>module load cuda/10.2.89;
+module load llvm/11.0.0;
+mkdir /nobackup/projects/$cemac/$USER ; 
+cd $_;
+conda create --prefix ./gpuenv python=3.7 --yes; 
+conda activate /nobackup/projects/$cemac/$USER/gpuenv;
+conda install ipython;
+</pre></div>
+</div>
+<section id="add-conda-channels-optional">
+<h3>Add conda channels (optional)<a class="headerlink" href="#add-conda-channels-optional" title="Link to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">default_channels</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">repo</span><span class="o">.</span><span class="n">anaconda</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pkgs</span><span class="o">/</span><span class="n">main</span>
+<span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">prepend</span> <span class="n">channels</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">public</span><span class="o">.</span><span class="n">dhe</span><span class="o">.</span><span class="n">ibm</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ibmdl</span><span class="o">/</span><span class="n">export</span><span class="o">/</span><span class="n">pub</span><span class="o">/</span><span class="n">software</span><span class="o">/</span><span class="n">server</span><span class="o">/</span><span class="n">ibm</span><span class="o">-</span><span class="n">ai</span><span class="o">/</span><span class="n">conda</span><span class="o">/</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="installing-common-libraries-with-conda">
+<h2>Installing common libraries with conda<a class="headerlink" href="#installing-common-libraries-with-conda" title="Link to this heading"></a></h2>
+<p>You can check which linux-ppc64lpython packages are available by looking by visiting <a href='https://docs.anaconda.com/anaconda/packages/py3.8_linux-ppc64le/'> here </a>.</p>
+<section id="tensorflow">
+<h3>Tensorflow<a class="headerlink" href="#tensorflow" title="Link to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">bazel</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="n">tensorflow</span><span class="o">-</span><span class="n">gpu</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="n">tensorflow</span><span class="o">-</span><span class="n">estimator</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">deps</span>
+</pre></div>
+</div>
+</section>
+<section id="aws-cli">
+<h3>AWS CLI<a class="headerlink" href="#aws-cli" title="Link to this heading"></a></h3>
+<p>This also works for non-python packages such as the AWS command-line interface
+<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">awscli</span></code></p>
+</section>
+<section id="gpflow">
+<h3>GPFlow<a class="headerlink" href="#gpflow" title="Link to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge bazel
+conda install tensorflow-probability
+conda install tensorflow-gpu
+conda install tensorflow-estimator --no-deps
+pip install gpflow — use-deprecated=legacy-resolver
+</pre></div>
+</div>
+</section>
+</section>
+<section id="useful-links">
+<h2>Useful Links:<a class="headerlink" href="#useful-links" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>https://gpuhackshef.readthedocs.io/en/latest/bede/index.html</p></li>
+<li><p>https://bede-documentation.readthedocs.io/_/downloads/en/latest/pdf/</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Bede" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../ai_ml/index.html" class="btn btn-neutral float-right" title="AI and Machine Learning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

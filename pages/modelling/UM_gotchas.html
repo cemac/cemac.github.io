@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>General UM tips &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Data Visualisation" href="../data_vis/index.html" />
+    <link rel="prev" title="Links Page" href="UM_Links.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version_control/index.html">Version Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Numerical Modelling</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ARCHER2.html">ARCHER2 notes for UM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ARCHER2.html#archiving">Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ECMWF_Data.html">USING ECMWF DATA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ECMWF_Data.html#building-eccodes">Building eccodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Guides_and_Tools.html">Guides and Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_Links.html">Links Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_Links.html#information-about-latest-configurations">Information about latest configurations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">General UM tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#debugging-tips">Debugging tips</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Numerical Modelling</a></li>
+      <li class="breadcrumb-item active">General UM tips</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/modelling/UM_gotchas.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="general-um-tips">
+<h1>General UM tips<a class="headerlink" href="#general-um-tips" title="Link to this heading"></a></h1>
+<section id="cms-helpdesk">
+<h2>CMS helpdesk<a class="headerlink" href="#cms-helpdesk" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://cms-helpdesk.ncas.ac.uk/">new cms helpdesk website</a></p>
+<p>The <a class="reference external" href="http://cms.ncas.ac.uk/documents/training/November2019/">NCAS UM tutorial</a></p>
+</section>
+<section id="check-out-a-test-suite">
+<h2>Check out a test suite<a class="headerlink" href="#check-out-a-test-suite" title="Link to this heading"></a></h2>
+<p>Suite <code class="docutils literal notranslate"><span class="pre">u-</span></code> should run on archer 2 with a swap of the charging code and user name</p>
+<p><code class="docutils literal notranslate"><span class="pre">Rosie</span> <span class="pre">go</span></code> search for suite and make a <strong>copy</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">&lt;suite-name&gt;</span></code>
+<code class="docutils literal notranslate"><span class="pre">rose</span> <span class="pre">edit</span></code></p>
+<p>make required edits user name and charging code and run</p>
+</section>
+<section id="running-a-suite">
+<h2>Running a Suite<a class="headerlink" href="#running-a-suite" title="Link to this heading"></a></h2>
+<p>in a suite dir run:</p>
+<p><code class="docutils literal notranslate"><span class="pre">rose</span> <span class="pre">suite-run</span> <span class="pre">--new</span></code>
+<code class="docutils literal notranslate"><span class="pre">rose</span> <span class="pre">suite-run</span> <span class="pre">--restart</span></code></p>
+</section>
+<section id="viewing-a-running-suites">
+<h2>viewing a running suites<a class="headerlink" href="#viewing-a-running-suites" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">rose</span> <span class="pre">sgc</span></code></p>
+</section>
+<section id="making-ancils">
+<h2>Making ancils<a class="headerlink" href="#making-ancils" title="Link to this heading"></a></h2>
+<section id="xancil">
+<h3>Xancil<a class="headerlink" href="#xancil" title="Link to this heading"></a></h3>
+<p>seg faults:
+<code class="docutils literal notranslate"><span class="pre">ulimit</span> <span class="pre">-Ss</span> <span class="pre">40000</span></code></p>
+</section>
+</section>
+<section id="ncview">
+<h2>ncview<a class="headerlink" href="#ncview" title="Link to this heading"></a></h2>
+<p>Cannot read xconv converted ancils. e.g. qrparam.orog.nc will only  be readable via xconv</p>
+<section id="gotchas">
+<h3>Gotchas<a class="headerlink" href="#gotchas" title="Link to this heading"></a></h3>
+</section>
+<section id="trouble-shutting-down-a-suite">
+<h3>Trouble shutting down a suite<a class="headerlink" href="#trouble-shutting-down-a-suite" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ps<span class="w"> </span>-flu<span class="w"> </span>&lt;username&gt;<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>&lt;suite-id&gt;
+</pre></div>
+</div>
+<p>then you can <code class="docutils literal notranslate"><span class="pre">kill</span> <span class="pre">-9</span> <span class="pre">&lt;PID&gt;</span></code> the process that is still running preventing the suite from shutting down</p>
+</section>
+</section>
+</section>
+<section id="debugging-tips">
+<h1>Debugging tips<a class="headerlink" href="#debugging-tips" title="Link to this heading"></a></h1>
+<p>if the job.err messages are completely unhelpful there’s a number of things you can do.</p>
+<ol class="arabic simple">
+<li><p>Try running: <code class="docutils literal notranslate"><span class="pre">addr2line</span> <span class="pre">--exe=&lt;/path/too/executable&gt;</span> <span class="pre">&lt;address&gt;</span></code></p></li>
+<li><p>Rerun in debug mode</p></li>
+</ol>
+<p>in <em>site/&lt;HOST_HPC&gt;/suite-adds.rc</em> add</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>atp
+<span class="nb">export</span><span class="w"> </span><span class="nv">ATP_ENABLED</span><span class="o">=</span><span class="m">1</span>
+</pre></div>
+</div>
+<p>to the <code class="docutils literal notranslate"><span class="pre">HOST_HPC</span> <span class="pre">init-script</span></code></p>
+<p><strong>AND</strong></p>
+<p>switching on extra output by</p>
+<p><em>um &gt; env &gt; runtime controls &gt; atmosphere only</em> set PRINT_STATUS to “Extra diagnostic messages”</p>
+<p>a similar thing can be done if your issue is in recon step</p>
+<section id="upgrading-a-suites">
+<h2>Upgrading a suites<a class="headerlink" href="#upgrading-a-suites" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="o">[</span>your<span class="w"> </span>suite<span class="o">]</span>
+rose<span class="w"> </span>macro<span class="w"> </span>--fix
+<span class="nb">cd</span><span class="w"> </span>app/um
+rose<span class="w"> </span>app-upgrade<span class="w"> </span>vn12.0<span class="w"> </span><span class="o">(</span>or<span class="w"> </span>whatever<span class="o">)</span>
+<span class="nb">cd</span><span class="w"> </span>…/fcm_make
+</pre></div>
+</div>
+<hr> 
+</section>
+<section id="high-resolution-specific-notes">
+<h2>High Resolution Specific Notes<a class="headerlink" href="#high-resolution-specific-notes" title="Link to this heading"></a></h2>
+<p>The Regional Area Science settings e.g. <a class="reference external" href="https://code.metoffice.gov.uk/trac/rmed/wiki/ra2">RA2</a> are scale aware.</p>
+<p>For sub-km simulations the RMED team have a useful <a class="reference external" href="https://code.metoffice.gov.uk/trac/rmed/wiki/subkm">wiki page</a> of settings (time steps etc) and adjustments that may be needed.</p>
+<hr>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h2>
+<section id="ancillary-generation-issues">
+<h3>Ancillary generation issues<a class="headerlink" href="#ancillary-generation-issues" title="Link to this heading"></a></h3>
+</section>
+<section id="vegfrac-failing">
+<h3>VEGFRAC failing<a class="headerlink" href="#vegfrac-failing" title="Link to this heading"></a></h3>
+<p>Generating subkm vegfrac ancillaries might fail in their interpolating. Its unclear why this is but you can
+use the fields from the parent nest where necessary. A neat way of doing this is to create exp1 config for
+your failing nest.</p>
+<p>I’d just set the soil necessary ancillaries to <code class="docutils literal notranslate"><span class="pre">source=1</span></code> (allow recon to decide) for the failing nest’s reconfiguration.
+This will then mean it picks up the parent nest ancillary data, which is more than good
+enough given the errors/approximations in the source data.</p>
+<p>Assuming you are using the same science configuration for all resolutions you can copy
+to that configuration to the expt1. i.e. copy <code class="docutils literal notranslate"><span class="pre">app/um/opt/rose-app-ra2t.conf</span></code> (or whatever config you’re using)
+to <code class="docutils literal notranslate"><span class="pre">app/um/opt/rose-app-expt1.conf</span></code> .</p>
+<p>Then add the ancil code from the <code class="docutils literal notranslate"><span class="pre">app/um/rose-app.conf</span></code> to the end of <code class="docutils literal notranslate"><span class="pre">expt1.conf</span></code> file,
+so for the latest version of the suite this is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[namelist:items(4c515841)]
+ancilfilename=&#39;$UM_ANCIL_VEGFRAC_DIR/$UM_ANCIL_VEGFRAC_FILE&#39;
+domain=1
+!!interval=1
+l_ignore_ancil_grid_check=.true.
+!!netcdf_varname=&#39;unset&#39;
+!!period=1
+source=1
+stash_req=216
+update_anc=.false.
+!!user_prog_ancil_stash_req=
+!!user_prog_rconst=0.0
+
+[namelist:items(884a098e)]
+ancilfilename=&#39;$UM_ANCIL_SOIL_DIR/$UM_ANCIL_SOIL_FILE&#39;
+domain=1
+!!interval=1
+l_ignore_ancil_grid_check=.false.
+!!netcdf_varname=10*&#39;unset&#39;
+!!period=1
+source=1
+stash_req=40,41,43,44,46,47,48,207,220,223
+update_anc=.false.
+!!user_prog_ancil_stash_req=
+!!user_prog_rconst=0.0
+</pre></div>
+</div>
+<p><strong>NB <code class="docutils literal notranslate"><span class="pre">source=2</span></code> is edited to <code class="docutils literal notranslate"><span class="pre">source=1</span></code></strong></p>
+<p>Then in the affected resolution configuration window make sure your change the <code class="docutils literal notranslate"><span class="pre">ra2t</span></code> or whatever
+in the drop down menu to <code class="docutils literal notranslate"><span class="pre">expt1</span></code>.</p>
+</section>
+<section id="domain-size">
+<h3>Domain Size<a class="headerlink" href="#domain-size" title="Link to this heading"></a></h3>
+<p>At high Resolution you may find your domain size is larger than the max sizes check for in Defensive checks</p>
+<p>You will need to checkout a copy of the source code and edit</p>
+<p><code class="docutils literal notranslate"><span class="pre">src/control/misc/atmos_max_sizes.F90</span></code></p>
+<p><em>NB check the source you’re checking out matches you might need a branch of a branch!</em></p>
+<p>Rebuild your executables and a larger domain will now be allowed</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="UM_Links.html" class="btn btn-neutral float-left" title="Links Page" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../data_vis/index.html" class="btn btn-neutral float-right" title="Data Visualisation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

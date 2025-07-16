@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adding PSyclone profiling calipers to UKCA in LFRic &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/twemoji.css" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../../../_static/twemoji.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Performance profiling on ARCHER2" href="Performance-Profiling.html" />
+    <link rel="prev" title="Profiling and Optimisation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../version_control/index.html">Version Control</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">HPC Systems</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">General</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../cloud_computing/index.html">Cloud Computing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../containers/index.html">Containers</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Profiling and Optimisation</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Adding PSyclone profiling calipers to UKCA in LFRic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Performance-Profiling.html">Performance profiling on ARCHER2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Performance-Profiling-with-Scalasca-and-ScoreP.html">Score-P Workflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../jasmin/index.html">JASMIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../puma/index.html">PUMA2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../bede/index.html">Bede</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">HPC Systems</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">General</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Profiling and Optimisation</a></li>
+      <li class="breadcrumb-item active">Adding PSyclone profiling calipers to UKCA in LFRic</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/pages/hpc/general/profiling/Adding profiling calipers with PSyclone in LFRic.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adding-psyclone-profiling-calipers-to-ukca-in-lfric">
+<h1>Adding PSyclone profiling calipers to UKCA in LFRic<a class="headerlink" href="#adding-psyclone-profiling-calipers-to-ukca-in-lfric" title="Link to this heading"></a></h1>
+<section id="building-the-psyclone-interface">
+<h2>Building the PSyclone interface<a class="headerlink" href="#building-the-psyclone-interface" title="Link to this heading"></a></h2>
+<p>First, navigate to your PSyclone directory. From here, go to <code class="docutils literal notranslate"><span class="pre">lib/profiling</span></code>.</p>
+<p>Call <code class="docutils literal notranslate"><span class="pre">make</span></code> on the PSyclone library you want to build with (e.g. Vernier/NVIDIA NVTX) in the relevant folder. See the information <a class="reference external" href="https://psyclone.readthedocs.io/en/latest/user_guide/profiling.html">here</a> on how to do this generically, and the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> in each of the relevant subfolders in the PSyclone GitHub repo for advice on speciific tools.
+Make sure you edit the <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> and use the same compiler/flags as you do for your LFRic build! I had segfault issues where I had <code class="docutils literal notranslate"><span class="pre">-Mchkptr</span></code> and <code class="docutils literal notranslate"><span class="pre">-Mchkstk</span></code> enabled in one but not the other. You may also need to point <code class="docutils literal notranslate"><span class="pre">VERNIER_ROOT</span></code> for example to your installed Vernier.</p>
+</section>
+<section id="getting-it-into-lfric">
+<h2>Getting it into LFRic<a class="headerlink" href="#getting-it-into-lfric" title="Link to this heading"></a></h2>
+<p>You also need to interface the PSyData libraries into the build system. See <a class="reference external" href="https://psyclone.readthedocs.io/en/stable/psy_data.html#integrating-psydata-libraries-into-the-lfric-build-environment">here</a> for details. The tl;dr of this:</p>
+<ul class="simple">
+<li><p>Create a new folder in a branch of LFRic (<code class="docutils literal notranslate"><span class="pre">infrastructure/source/psydata</span></code>)</p></li>
+<li><p>Add the relevant f90 files that you built earlier to this folder. Now they are part of the LFRic source code, they will be analysed, built against and linked into the final binary.</p></li>
+<li><p>I had many issues when trying to get this going trying to get <code class="docutils literal notranslate"><span class="pre">DependencyAnalyser</span></code> (the tool used by LFRic to check dependencies all work before building). I fixed this by adding <code class="docutils literal notranslate"><span class="pre">vernier_mod</span></code> and <code class="docutils literal notranslate"><span class="pre">vernier</span></code> to the list of things for <code class="docutils literal notranslate"><span class="pre">DependencyAnalyser</span> <span class="pre">to</span> <span class="pre">ignore</span></code> - this is because the libraries are pre-built and linked in (using <code class="docutils literal notranslate"><span class="pre">-lvernier</span></code>, <code class="docutils literal notranslate"><span class="pre">-lvernier_psy</span></code>, <code class="docutils literal notranslate"><span class="pre">-lvernier_f</span></code> and <code class="docutils literal notranslate"><span class="pre">-lvernier_c</span></code> in the Vernier case). You can do this with <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">IGNORE_DEPENDENCIES</span> <span class="pre">+=...</span></code> in your environment/job submission script, or you can amend <code class="docutils literal notranslate"><span class="pre">infrastructure/build/import.mk</span></code> in your LFRic branch. You may also need to <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">EXTERNAL_DYNAMIC_LIBRARIES</span> <span class="pre">+=</span> <span class="pre">vernier</span></code> also - either in the build script or in <code class="docutils literal notranslate"><span class="pre">import.mk</span></code>.</p></li>
+<li><p>Add the includes and libraries - again you can use environment variables in your job submission script. e.g. for Vernier <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">LDFLAGS+='</span> <span class="pre">-L&lt;psyclone_path&gt;/lib/profiling/vernier</span> <span class="pre">-lvernier_psy</span> <span class="pre">-lvernier_f</span> <span class="pre">-lvernier_c</span> <span class="pre">-lvernier'</span></code> and <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">FFLAGS+='</span> <span class="pre">-I&lt;psyclone_path&gt;/lib/profiling/vernier</span></code></p></li>
+</ul>
+<p>You then need to include calls to <code class="docutils literal notranslate"><span class="pre">profile_PSyDataInit()</span></code> and <code class="docutils literal notranslate"><span class="pre">profile_PSyDataShutdown()</span></code> into LFRic - in <code class="docutils literal notranslate"><span class="pre">infrastructure/source/utilities/mpi_mod.F90</span></code>. Where exactly these go depends on the profiling library you use. For Vernier, since it gives separate output files per MPI rank, you need to include these <em>inside</em> the calls to <code class="docutils literal notranslate"><span class="pre">MPI_init</span></code> and <code class="docutils literal notranslate"><span class="pre">MPI_finalize</span></code>. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  use profile_psy_data_mod, only : profile_PSyDataInit, profile_PSyDataShutdown
+...
+...
+...
+  subroutine create_comm(out_comm)
+    implicit none
+    integer, intent(out) :: out_comm
+    integer :: ierr
+
+#ifdef NO_MPI
+    ! Don&#39;t initialise mpi in non-mpi build.
+    call profile_PSyDataInit()
+    out_comm = 0
+    ierr=0 ! Set local variable to avoid unused variable errors
+#else
+    call mpi_init(ierr)
+    call profile_PSyDataInit()
+    if (ierr /= mpi_success) &amp;
+          call log_event(&#39;Unable to initialise MPI&#39;, LOG_LEVEL_ERROR )
+    out_comm = mpi_comm_world
+#endif
+  end subroutine create_comm
+
+  !&gt; Helper function (not type bound) that finalises mpi and releases
+  !&gt; mpi_comm_world
+  !&gt;
+  subroutine destroy_comm()
+    implicit none
+    integer :: ierr
+
+#ifdef NO_MPI
+    ! Don&#39;t finalise mpi in non-mpi build
+    call profile_PSyDataShutdown()
+    ierr=0 ! Set local variable to avoid unused variable errors
+#else
+    
+    call profile_PSyDataShutdown()
+    call mpi_finalize(ierr)
+    if (ierr /= mpi_success) &amp;
+          call log_event(&#39;Unable to finalise MPI&#39;, LOG_LEVEL_ERROR )
+#endif
+  end subroutine destroy_comm
+</pre></div>
+</div>
+</section>
+<section id="adding-the-calipers-into-the-ukca-code">
+<h2>Adding the calipers into the UKCA code<a class="headerlink" href="#adding-the-calipers-into-the-ukca-code" title="Link to this heading"></a></h2>
+<p>You can use a transformer to instrument specific loops, or you can simple pass the <code class="docutils literal notranslate"><span class="pre">--profile</span> <span class="pre">routines</span></code> option to add instrumentation to all subroutines that you parse with PSyclone. See <a class="reference external" href="https://psyclone.readthedocs.io/en/latest/user_guide/profiling.html#profiling-command-line-options">here</a> for details.  My current workflow is to do this work on a branch, then point <code class="docutils literal notranslate"><span class="pre">dependencies.sh</span></code> to that branch. WIP is to get Benjamin Went’s work incorporated, so we include this step within the build system itself.</p>
+</section>
+<section id="tips-for-building">
+<h2>Tips for building<a class="headerlink" href="#tips-for-building" title="Link to this heading"></a></h2>
+<p>An important note is to <em>delete your</em> <code class="docutils literal notranslate"><span class="pre">working</span></code> <em>directory</em> if your build fails and you make changes to the Makefiles etc. when you build them. Whether this is always necessary I’m not sure, but oftentimes I’ll make a change (e.g. adding a module to be ignored) and it doesn’t pick it up until I do this.</p>
+<p>The neat thing is that you can apply this to any arbitrary Fortran source code, not just LFRic - in fact it is easier in this case as you don’t need to mess around with the complex LFRic build system (this was written before <code class="docutils literal notranslate"><span class="pre">Fab</span></code>/<code class="docutils literal notranslate"><span class="pre">Baf</span></code> were put into routine use, so this comment may be out of date!)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Profiling and Optimisation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Performance-Profiling.html" class="btn btn-neutral float-right" title="Performance profiling on ARCHER2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

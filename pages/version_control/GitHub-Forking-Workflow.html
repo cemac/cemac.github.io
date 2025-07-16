@@ -1,0 +1,220 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating forks on GitHub &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Building GitHub Pages with Jekyll" href="GitHub-Pages-at-Leeds.html" />
+    <link rel="prev" title="Git tips and tricks" href="Git-Tips.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Version Control</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FCM.html">FCM Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Protocols.html">Good working practices for GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Tips.html">Git tips and tricks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Creating forks on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Pages-at-Leeds.html">Building GitHub Pages with Jekyll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Github-Access-Tokens.html">Github Access tokens - 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gitter.html">Gitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Licensing.html">Licensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sensitive-information.html">CEMAC - Encrypting sensitive information on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx.html">GitHub Pages with Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Version Control</a></li>
+      <li class="breadcrumb-item active">Creating forks on GitHub</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/version_control/GitHub-Forking-Workflow.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="creating-forks-on-github">
+<h1>Creating forks on GitHub<a class="headerlink" href="#creating-forks-on-github" title="Link to this heading"></a></h1>
+<p><em>The following notes assume that you have git running locally and that you have set up authentication for working remotely with GitHub.</em></p>
+<p>GitHub forks allow you to create a working copy of a git repository on GitHub which you can adapt and modify before submitting your changes back to the original repository as a pull request.</p>
+<section id="creating-a-fork">
+<h2>Creating a fork<a class="headerlink" href="#creating-a-fork" title="Link to this heading"></a></h2>
+<p>From the repository view, click on “Fork” at the top of the page to open the “Create a new fork” page.</p>
+<p><img src="https://user-images.githubusercontent.com/10053102/182353209-e6b04919-6494-4364-ba33-01049abad66e.png" width=600></p>
+<p>By default the fork will be created in your personal account with the same name as the original repository. The owner and name of the fork can be adjusted if required.</p>
+<p>You can choose whether to copy the main branch only – this is fine unless you need to work with a different branch in the repository e.g. to collaborate on a feature which has not yet been merged into the main branch or on work which takes place in a specific development branch.</p>
+<p>Click on “Create fork”. You’ll be directed to the main page of your fork of the repository. You’ll see “forked from <repo>” at the top of the page which indicates that this repository is a fork.</p>
+</section>
+<section id="working-with-forks">
+<h2>Working with forks<a class="headerlink" href="#working-with-forks" title="Link to this heading"></a></h2>
+<p>Having created a fork, you can clone a copy of the repository from your fork. Click on “Code” to bring up the URL for cloning the repository.</p>
+<p>
+<img src="https://user-images.githubusercontent.com/10053102/182353401-60c3afc9-5cd7-4256-8cd5-3cf3ab2faa18.png" width=600>
+</p>
+<p>At a command line prompt/terminal window, change directory to a suitable location and clone the repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">project</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">ghuser</span><span class="o">/</span><span class="n">project_repo</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>This creates a local copy of the repository which is linked to your fork:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd project_repo 
+$ git remote –v 
+origin git@github.com:ghuser/project_repo.git (fetch) 
+origin git@github.com:ghuser/project_repo.git (push) 
+</pre></div>
+</div>
+<p>You should also add the original repository as an upstream remote. This will allow you to keep your fork up-to-date with the original repository (updating can also now be done via the GitHub user interface).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">orig</span><span class="o">/</span><span class="n">project_repo</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>If you have already cloned the original repository and started working with your local copy, you can modify the remote URLs so that your fork is the origin and the original repository is upstream:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="nb">set</span><span class="o">-</span><span class="n">url</span> <span class="n">origin</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">ghuser</span><span class="o">/</span><span class="n">project_repo</span><span class="o">.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">orig</span><span class="o">/</span><span class="n">project_repo</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-a-feature-branch">
+<h2>Creating a feature branch<a class="headerlink" href="#creating-a-feature-branch" title="Link to this heading"></a></h2>
+<p>It’s good practice to make your changes in a separate <a class="reference external" href="https://www.atlassian.com/git/tutorials/using-branches">branch</a> of the repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">my</span><span class="o">-</span><span class="n">feature</span><span class="o">-</span><span class="n">branch</span>       <span class="o">&lt;-</span> <span class="n">create</span> <span class="n">feature</span> <span class="n">branch</span> 
+</pre></div>
+</div>
+<p>If your changes are to be made on top of an existing branch in the repository you can specify the branch on which to create your feature branch:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">my</span><span class="o">-</span><span class="n">feature</span><span class="o">-</span><span class="n">branch</span> <span class="n">dev</span>   <span class="o">&lt;-</span> <span class="n">create</span> <span class="n">feature</span> <span class="n">branch</span> <span class="n">based</span> <span class="n">on</span> <span class="n">dev</span> <span class="n">branch</span>
+</pre></div>
+</div>
+<p>Now you are ready to commit your changes and push to your fork:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">commit</span> <span class="n">changes</span> <span class="n">on</span> <span class="n">feature</span> <span class="n">branch</span><span class="o">&gt;</span> 
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">my</span><span class="o">-</span><span class="n">feature</span><span class="o">-</span><span class="n">branch</span> 
+</pre></div>
+</div>
+</section>
+<section id="making-a-pull-request">
+<h2>Making a pull request<a class="headerlink" href="#making-a-pull-request" title="Link to this heading"></a></h2>
+<p>After pushing commits to your fork you will be prompted to create a pull request on GitHub. Doing so will send a request to the owner of the original repository to merge your changes into the repository.</p>
+<p>Note that your pull request should merge the feature branch back into the upstream branch on which your feature branch was based. The default branch selected when you create a pull request is the main branch so make sure that you change this if your work is based on a different branch.</p>
+</section>
+<section id="fetch-upstream">
+<h2>Fetch upstream<a class="headerlink" href="#fetch-upstream" title="Link to this heading"></a></h2>
+<p>If changes are made in the upstream repository you will need to bring your fork of the repository up-to-date. To update your main branch from the upstream repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span> 
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">main</span> 
+<span class="n">git</span> <span class="n">merge</span> <span class="n">upstream</span><span class="o">/</span><span class="n">main</span> 
+</pre></div>
+</div>
+<p>Alternatively, you can update your fork via GitHub by clicking on “Fetch upstream” then “Update branch”. If you take this approach, you’ll need to follow it up by pulling the changes into your local copy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">fetch</span> <span class="n">origin</span> 
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">main</span> 
+<span class="n">git</span> <span class="n">merge</span> <span class="n">origin</span><span class="o">/</span><span class="n">main</span> 
+</pre></div>
+</div>
+</section>
+<section id="working-with-branches">
+<h2>Working with branches<a class="headerlink" href="#working-with-branches" title="Link to this heading"></a></h2>
+<p>Making your changes in a separate branch makes it easier to keep your repository up-to-date with upstream changes. Working on a feature branch allows you to use rebase to replay your local changes on top of the upstream changes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">my</span><span class="o">-</span><span class="n">feature</span><span class="o">-</span><span class="n">branch</span>         <span class="o">&lt;-</span> <span class="n">create</span> <span class="n">feature</span> <span class="n">branch</span> 
+<span class="o">&lt;</span><span class="n">commit</span> <span class="n">changes</span> <span class="n">on</span> <span class="n">feature</span> <span class="n">branch</span><span class="o">&gt;</span> 
+<span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span> 
+<span class="n">git</span> <span class="n">rebase</span> <span class="n">upstream</span><span class="o">/</span><span class="n">main</span>                  <span class="o">&lt;-</span> <span class="n">replay</span> <span class="n">changes</span> <span class="ow">in</span> <span class="n">feature</span> <span class="n">branch</span> <span class="n">on</span> <span class="n">top</span> <span class="n">of</span> <span class="n">upstream</span><span class="o">/</span><span class="n">main</span>
+</pre></div>
+</div>
+<p>When you have finished working with a branch (i.e. when you have completed a pull request to merge your branch with the upstream repository) you can delete the local copy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">main</span>
+<span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">d</span> <span class="n">my</span><span class="o">-</span><span class="n">feature</span><span class="o">-</span><span class="n">branch</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Git-Tips.html" class="btn btn-neutral float-left" title="Git tips and tricks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="GitHub-Pages-at-Leeds.html" class="btn btn-neutral float-right" title="Building GitHub Pages with Jekyll" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USING ECMWF DATA &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Guides and Tools" href="Guides_and_Tools.html" />
+    <link rel="prev" title="ARCHER2 notes for UM" href="ARCHER2.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version_control/index.html">Version Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Numerical Modelling</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ARCHER2.html">ARCHER2 notes for UM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ARCHER2.html#archiving">Archiving</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">USING ECMWF DATA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-eccodes">Building eccodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Guides_and_Tools.html">Guides and Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_Links.html">Links Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_Links.html#information-about-latest-configurations">Information about latest configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_gotchas.html">General UM tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UM_gotchas.html#debugging-tips">Debugging tips</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Numerical Modelling</a></li>
+      <li class="breadcrumb-item active">USING ECMWF DATA</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/modelling/ECMWF_Data.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-ecmwf-data">
+<h1>USING ECMWF DATA<a class="headerlink" href="#using-ecmwf-data" title="Link to this heading"></a></h1>
+<section id="obtaining-ecmwf-data">
+<h2>Obtaining ECMWF data<a class="headerlink" href="#obtaining-ecmwf-data" title="Link to this heading"></a></h2>
+<section id="via-cdsapi-on-archer">
+<h3>via cdsapi on ARCHER<a class="headerlink" href="#via-cdsapi-on-archer" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>register at <a class="reference external" href="https://cds.climate.copernicus.eu">https://cds.climate.copernicus.eu</a></p></li>
+<li><p>obtain your UID and API Key from your profile page</p></li>
+<li><p>create a file <code class="docutils literal notranslate"><span class="pre">~/.cdsapirc</span></code> on ARCHER with this content</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">url</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">cds</span><span class="o">.</span><span class="n">climate</span><span class="o">.</span><span class="n">copernicus</span><span class="o">.</span><span class="n">eu</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v2</span>
+<span class="n">key</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">UID</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">API</span> <span class="n">KEY</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>set up environment
+<code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">cray</span> <span class="pre">pythong</span></code>
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">ecmwf-api-client</span></code>
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">cdsapi</span></code></p></li>
+<li><p>Run script <code class="docutils literal notranslate"><span class="pre">get_data.py</span></code></p></li>
+</ol>
+</section>
+</section>
+<section id="run-model">
+<h2>Run model<a class="headerlink" href="#run-model" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ancils</span> <span class="pre">only</span></code> with extra domain, larger than your domain 1</p></li>
+<li><p>store these ancillaries</p></li>
+<li><p>you may need to edit <code class="docutils literal notranslate"><span class="pre">meta/rose-meta.conf</span></code> to allow more domains if you’re already using 5 and run <code class="docutils literal notranslate"><span class="pre">/bin/setup_metadata</span></code> to generate a new file <strong>NB</strong> backup your suite.rc and conf files.</p></li>
+<li><p>Edit the fcm_make config source to one that has correct ecCodes path (see below)</p></li>
+<li><p>run the model with <code class="docutils literal notranslate"><span class="pre">Driving</span> <span class="pre">model</span></code> set to ECMWF (point to ancils generated and the grib files)</p></li>
+</ul>
+</section>
+<section id="modifying-a-um-code-to-use-ecmwf-data">
+<h2>Modifying a um code to use ECMWF data<a class="headerlink" href="#modifying-a-um-code-to-use-ecmwf-data" title="Link to this heading"></a></h2>
+<p>Versions 11.2 onwards uses ecCodes <a class="reference external" href="https://code.metoffice.gov.uk/trac/um/wiki/ReleaseNotes11.2">https://code.metoffice.gov.uk/trac/um/wiki/ReleaseNotes11.2</a> and should work out the box. HOWEVER</p>
+<p>The UM executable needs to know the correct location of a working build of Eccode in order to decode girb files. Either</p>
+</section>
+<section id="extra-additions-you-may-want-to-adjust">
+<h2>Extra additions you may want to adjust:<a class="headerlink" href="#extra-additions-you-may-want-to-adjust" title="Link to this heading"></a></h2>
+</section>
+<section id="older-versions-of-the-um">
+<h2>Older Versions of the UM<a class="headerlink" href="#older-versions-of-the-um" title="Link to this heading"></a></h2>
+<p>These will need to be modified</p>
+<p><code class="docutils literal notranslate"><span class="pre">fcm_make</span></code>–&gt; <code class="docutils literal notranslate"><span class="pre">Configuration</span> <span class="pre">file</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">config_root_path</span></code> : <code class="docutils literal notranslate"><span class="pre">fcm:um.x_br/dev/helenburns/r93258_vn11.1_archer2_compile_eccodes</span></code></p>
+<p>and source</p>
+<p><code class="docutils literal notranslate"><span class="pre">fcm_make</span></code>–&gt; <code class="docutils literal notranslate"><span class="pre">Sources</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">um_sources</span></code> : <code class="docutils literal notranslate"><span class="pre">fcm:um.x_br/dev/helenburns/11.4_11.4_GRIB_API</span></code></p>
+<p>in these branches I have edited
+<code class="docutils literal notranslate"><span class="pre">external_paths.cfg</span></code> <code class="docutils literal notranslate"><span class="pre">parallel.cfg</span></code> <code class="docutils literal notranslate"><span class="pre">rcf_grib_block_params_mod.F90</span></code> and <code class="docutils literal notranslate"><span class="pre">ukmo_grib_mod.F90</span></code></p>
+<p>to allow eccodes to be used.</p>
+</section>
+</section>
+<section id="building-eccodes">
+<h1>Building eccodes<a class="headerlink" href="#building-eccodes" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://confluence.ecmwf.int/display/ECC/ecCodes+installation">Offical Eccode installation notes</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>eccodes
+<span class="sb">`</span>wget<span class="w"> </span>https://confluence.ecmwf.int/download/attachments/45757960/eccodes-2.22.0-Source.tar.gz<span class="sb">`</span>
+tar<span class="w"> </span>-xvf<span class="w"> </span>eccodes-2.22.0-Source.tar.gz
+mkdir<span class="w"> </span>build
+<span class="nb">cd</span><span class="w"> </span>build
+</pre></div>
+</div>
+<p>make sure the correct modules are loaded. These need to match what is loaded when um is loaded</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>cmake
+module<span class="w"> </span>load<span class="w"> </span>cce/12.0.3
+module<span class="w"> </span>load<span class="w"> </span>cray-hdf5
+module<span class="w"> </span>load<span class="w"> </span>cray-netcdf
+</pre></div>
+</div>
+<p>The following flags are required</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">&lt;</span><span class="n">path</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">source</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">DCMAKE_INSTALL_PREFIX</span><span class="o">=&lt;</span><span class="n">path</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">install</span><span class="o">-</span><span class="nb">dir</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">DBUILD_SHARED_LIBS</span><span class="o">=</span><span class="n">OFF</span> <span class="o">-</span><span class="n">DENABLE_JPG</span><span class="o">=</span><span class="n">OFF</span>
+</pre></div>
+</div>
+<p>Here’s a example of my debugging cmake command adding extra tests and -g flag</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span>  <span class="o">../</span><span class="n">eccodes</span><span class="o">-</span><span class="mf">2.22.0</span><span class="o">-</span><span class="n">Source</span> <span class="o">-</span><span class="n">DCMAKE_INSTALL_PREFIX</span><span class="o">=/</span><span class="n">work</span><span class="o">/</span><span class="n">n02</span><span class="o">/</span><span class="n">n02</span><span class="o">/</span><span class="n">hburns</span><span class="o">/</span><span class="n">eccodes</span><span class="o">/</span><span class="mf">2.22.0</span> <span class="o">-</span><span class="n">DENABLE_EXTRA_TESTS</span><span class="o">=</span><span class="n">ON</span>  <span class="o">-</span><span class="n">DCMAKE_Fortran_COMPILER</span><span class="o">=</span><span class="n">ftn</span> <span class="o">-</span><span class="n">DCMAKE_Fortran_FLAGS</span><span class="o">=-</span><span class="n">g</span> <span class="o">-</span><span class="n">DBUILD_SHARED_LIBS</span><span class="o">=</span><span class="n">OFF</span> <span class="o">-</span><span class="n">DENABLE_JPG</span><span class="o">=</span><span class="n">OFF</span>
+</pre></div>
+</div>
+<p>There’s a bug in the ftn wrapper here RUNPATH does not get set properly
+Need to explicitly add path to location of libunwind.so to link line before running make
+Edit fortran/CMakeFiles/grib_types.dir/link.txt to replace ``-Wl,rpath`, setting with:</p>
+<p><code class="docutils literal notranslate"><span class="pre">-Wl,rpath,/opt/cray/pe/cce/12.0.3/cce-clang/x86_64/lib/libunwind.so</span></code></p>
+<p>in the following files</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fortran</span><span class="o">/</span><span class="n">CMakeFiles</span><span class="o">/</span><span class="n">grib_types</span><span class="o">.</span><span class="n">dir</span><span class="o">/</span><span class="n">link</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">examples</span><span class="o">/</span><span class="n">F90</span><span class="o">/</span><span class="n">CMakeFiles</span><span class="o">/</span><span class="n">eccodes_f_grib_ecc</span><span class="o">-</span><span class="mf">671.</span><span class="n">dir</span><span class="o">/</span><span class="n">link</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">examples</span><span class="o">/</span><span class="n">F90</span><span class="o">/</span><span class="n">CMakeFiles</span><span class="o">/</span><span class="n">eccodes_f_grib_set_data</span><span class="o">.</span><span class="n">dir</span><span class="o">/</span><span class="n">link</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">examples</span><span class="o">/</span><span class="n">F90</span><span class="o">/</span><span class="n">CMakeFiles</span><span class="o">/</span><span class="n">eccodes_f_grib_set_pv</span><span class="o">.</span><span class="n">dir</span><span class="o">/</span><span class="n">link</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>once those edits are made you can finish the rest of the installation</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="o">-</span><span class="n">j4</span>
+<span class="n">ctest</span> <span class="o">-</span><span class="n">j4</span>
+<span class="n">make</span> <span class="n">install</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ARCHER2.html" class="btn btn-neutral float-left" title="ARCHER2 notes for UM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Guides_and_Tools.html" class="btn btn-neutral float-right" title="Guides and Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

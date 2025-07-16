@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git tips and tricks &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Creating forks on GitHub" href="GitHub-Forking-Workflow.html" />
+    <link rel="prev" title="Good working practices for GitHub" href="Git-Protocols.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Version Control</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FCM.html">FCM Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Protocols.html">Good working practices for GitHub</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Git tips and tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Forking-Workflow.html">Creating forks on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Pages-at-Leeds.html">Building GitHub Pages with Jekyll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Github-Access-Tokens.html">Github Access tokens - 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gitter.html">Gitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Licensing.html">Licensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sensitive-information.html">CEMAC - Encrypting sensitive information on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx.html">GitHub Pages with Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Version Control</a></li>
+      <li class="breadcrumb-item active">Git tips and tricks</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/version_control/Git-Tips.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="git-tips-and-tricks">
+<h1>Git tips and tricks<a class="headerlink" href="#git-tips-and-tricks" title="Link to this heading"></a></h1>
+<section id="gotchas-from-the-course">
+<h2>Gotchas from the course:<a class="headerlink" href="#gotchas-from-the-course" title="Link to this heading"></a></h2>
+<p>Course notes:
+<a class="reference external" href="https://cemac.github.io/sc-git/">https://cemac.github.io/sc-git/</a></p>
+<ul class="simple">
+<li><p>On windows git bash is preferable to use over git CMD as git bash gives you access to useful bash commands</p></li>
+<li><p>checkout changes: make sure to stash changes if you’re unsure of reverting them</p></li>
+<li><p>Undoing a staging <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">--cached</span> <span class="pre">&lt;file&gt;</span></code></p></li>
+<li><p>storing credentials if you don’t want to use ssh: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">credential.helper</span> <span class="pre">'cache</span> <span class="pre">--timeout=300'</span> </code></p></li>
+</ul>
+<section id="extra-tips">
+<h3>Extra Tips<a class="headerlink" href="#extra-tips" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>git diff</strong>
+You can use verbose time references, quite handy for checking what you’ve changed since say wednesday</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w"> </span>git<span class="w"> </span>diff<span class="w"> </span>HEAD@<span class="o">{</span>yesterday<span class="o">}</span>,
+<span class="w"> </span>git<span class="w"> </span>diff<span class="w"> </span>HEAD@<span class="o">{</span><span class="s1">&#39;2 months ago&#39;</span><span class="o">}</span>
+<span class="w"> </span>git<span class="w"> </span>diff<span class="w"> </span>HEAD@<span class="o">{</span><span class="s1">&#39;2010-01-01 12:00:00&#39;</span><span class="o">}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>pretty terminal git tree</strong></p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>log<span class="w"> </span>--graph<span class="w"> </span>--pretty<span class="o">=</span>format:<span class="s1">&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39;</span><span class="w"> </span>--abbrev-commit<span class="w"> </span>--date<span class="o">=</span>relative
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Adding to commits</strong>
+Just committed something and noticed a typo and dont want a whole new commit for that typo?</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>--all<span class="p">;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>--amend
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Safer git force push</strong></p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push<span class="w"> </span>--force-with-lease<span class="w"> </span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="large-files-on-git-hub">
+<h2>Large Files on git hub<a class="headerlink" href="#large-files-on-git-hub" title="Link to this heading"></a></h2>
+<p>If you must have a file larger than 100MB on github then it is possible via git lfs. E.g. a single data file that is not being regularly edited.</p>
+<ol class="arabic simple">
+<li><p>install <a class="reference external" href="https://git-lfs.github.com/">git lfs</a></p></li>
+<li><p>follow these steps</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># initialise git lfs in repo</span>
+<span class="nb">cd</span><span class="w"> </span>repo
+git<span class="w"> </span>lfs<span class="w"> </span>install
+<span class="c1"># tell lfs which large files need tracking</span>
+git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s2">&quot;*.mat&quot;</span>
+<span class="c1"># make sure the .gitattributes file is added</span>
+git<span class="w"> </span>add<span class="w"> </span>.gitattributes
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-am<span class="w"> </span><span class="s1">&#39;adding large files&#39;</span>
+<span class="c1"># push the commit via git lfs</span>
+git<span class="w"> </span>lfs<span class="w"> </span>push<span class="w"> </span>--all<span class="w"> </span>origin<span class="w"> </span>main
+<span class="c1"># update github</span>
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Git-Protocols.html" class="btn btn-neutral float-left" title="Good working practices for GitHub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="GitHub-Forking-Workflow.html" class="btn btn-neutral float-right" title="Creating forks on GitHub" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

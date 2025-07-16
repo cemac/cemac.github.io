@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Github Access tokens - 2FA &mdash; cemac.github.io 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/twemoji.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+      <script src="../../_static/twemoji.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Gitter" href="Gitter.html" />
+    <link rel="prev" title="Building GitHub Pages with Jekyll" href="GitHub-Pages-at-Leeds.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            cemac.github.io
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../computing/index.html">General computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Version Control</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FCM.html">FCM Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Protocols.html">Good working practices for GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Git-Tips.html">Git tips and tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Forking-Workflow.html">Creating forks on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GitHub-Pages-at-Leeds.html">Building GitHub Pages with Jekyll</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Github Access tokens - 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gitter.html">Gitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Licensing.html">Licensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sensitive-information.html">CEMAC - Encrypting sensitive information on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx.html">GitHub Pages with Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc/index.html">HPC Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai_ml/index.html">AI and Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modelling/index.html">Numerical Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_vis/index.html">Data Visualisation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cemac.github.io</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Version Control</a></li>
+      <li class="breadcrumb-item active">Github Access tokens - 2FA</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pages/version_control/Github-Access-Tokens.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div align="center">
+<a href="https://www.cemac.leeds.ac.uk/">
+  <img src="https://github.com/cemac/cemac_generic/blob/master/Images/cemac.png"></a>
+  <br>
+</div>
+<section id="github-access-tokens-2fa">
+<h1>Github Access tokens - 2FA<a class="headerlink" href="#github-access-tokens-2fa" title="Link to this heading"></a></h1>
+<p>With the introduction of two factor authentication, we are now required to change the way we access our repositories. There are now two main methods to upload to Github: using ssh keys or access tokens. This page describes the latter.</p>
+<section id="generating-a-token">
+<h2>Generating a Token<a class="headerlink" href="#generating-a-token" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Click on your <code class="docutils literal notranslate"><span class="pre">user</span> <span class="pre">icon</span></code> (right)</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Settings</span></code></p></li>
+<li><p>From the left-hand menu, select <code class="docutils literal notranslate"><span class="pre">Developer</span> <span class="pre">Settings</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Personal</span> <span class="pre">Access</span> <span class="pre">Tokens</span></code></p></li>
+<li><p>Right Top <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">New</span> <span class="pre">Token</span></code></p></li>
+</ol>
+<p>Copy and <strong>SAVE</strong> the token, <strong>you will not get to view it again without generating a new one!</strong></p>
+</section>
+<section id="storing-the-token">
+<h2>Storing the token<a class="headerlink" href="#storing-the-token" title="Link to this heading"></a></h2>
+<section id="caching-for-a-temporary-period-in-time">
+<h3>Caching for a TEMPORARY period in time<a class="headerlink" href="#caching-for-a-temporary-period-in-time" title="Link to this heading"></a></h3>
+<p>If we wish to store our token for a fixed period in time we may cache it with a predefined timeout.</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">credential.helper</span> <span class="pre">'cache</span> <span class="pre">--timeout=31540000'</span></code></p>
+<p>Here the timeout corresponds to that of a year, and you should not need to re-enter it during that time.</p>
+</section>
+<section id="storing-the-token-in-plaintext">
+<h3>Storing the token in plaintext<a class="headerlink" href="#storing-the-token-in-plaintext" title="Link to this heading"></a></h3>
+<p>It is also possible to save it within your home directory as a plaintext file, serving much the same purpose.</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">credential.helper</span> <span class="pre">store</span></code></p>
+</section>
+</section>
+<section id="finally-we-need-to-enter-the-token-itself">
+<h2>Finally, we need to enter the token itself.<a class="headerlink" href="#finally-we-need-to-enter-the-token-itself" title="Link to this heading"></a></h2>
+<p>We can do this by running a git pull command, entering our username and using the token when prompted for a password.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Username</span> <span class="k">for</span> <span class="s1">&#39;https://github.com&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;</span>
+<span class="n">Password</span> <span class="k">for</span> <span class="s1">&#39;https://&lt;user&gt;@github.com&#39;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">token</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="GitHub-Pages-at-Leeds.html" class="btn btn-neutral float-left" title="Building GitHub Pages with Jekyll" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Gitter.html" class="btn btn-neutral float-right" title="Gitter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Centre for Environmental Modelling and Computation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
