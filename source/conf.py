@@ -9,7 +9,7 @@
 project = 'cemac.github.io'
 copyright = '2025, Centre for Environmental Modelling and Computation'
 author = 'Centre for Environmental Modelling and Computation'
-release = ''
+#release = '1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
